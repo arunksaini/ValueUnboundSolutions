@@ -1,0 +1,74 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "vision": "Vision",
+        "contact": "Contact",
+        "get_started": "Get Started"
+    },
+    "hero": {
+        "headline": "Freeing Business Value from Unnecessary Software",
+        "subheadline": "We help companies reduce Salesforce costs, eliminate complexity, and increase ROI through smart automation and AI—without vendor lock-in.",
+        "cta_primary": "Discover How",
+        "cta_secondary": "Learn Our Story"
+    },
+    "about": {
+        "title": "Why Value Unbound Solutions?",
+        "card_value_title": "Value",
+        "card_value_desc": "Measurable outcomes: cost savings, efficiency, ROI, reliability—not just promises",
+        "card_unbound_title": "Unbound",
+        "card_unbound_desc": "Freedom from vendor lock-in, forced bundles, and unnecessary dependencies",
+        "card_solutions_title": "Solutions",
+        "card_solutions_desc": "Practical, execution-focused outcomes—not just advice or tools",
+        "closing": "Together, Value Unbound Solutions represents our commitment to separate real business value from bloated software ecosystems and deliver it in a way that is flexible, transparent, and sustainable."
+    },
+    "vision": {
+        "title": "Our Vision",
+        "main_statement": "To help businesses regain control over their systems, reduce unnecessary costs, and increase ROI through intentional technology choices.",
+        "point_1_title": "Reduce unnecessary Salesforce cost and complexity",
+        "point_1_desc": "We audit, optimize, and unbundle where Salesforce doesn't add value",
+        "point_2_title": "Regain control over systems and processes",
+        "point_2_desc": "Your business logic should work for you, not for the vendor",
+        "point_3_title": "Increase ROI through smart automation, integration, and AI",
+        "point_3_desc": "We automate what matters and integrate intelligently",
+        "point_4_title": "Choose tools intentionally—no forced bundles",
+        "point_4_desc": "Platform-neutral approach focused on your outcomes",
+        "motto": "Measured value, not bundled software."
+    },
+    "services": {
+        "title": "What We Do",
+        "service_1_title": "Salesforce Optimization",
+        "service_1_desc": "Audit, streamline, and reduce costs in your existing Salesforce implementation",
+        "service_2_title": "Process Automation",
+        "service_2_desc": "Automate workflows and eliminate manual work with AI and smart integrations",
+        "service_3_title": "System Integration",
+        "service_3_desc": "Connect your tools seamlessly without vendor lock-in",
+        "service_4_title": "Strategic Advisory",
+        "service_4_desc": "Technology decisions based on your business outcomes, not vendor roadmaps"
+    },
+    "differentiators": {
+        "title": "Why Choose Us?",
+        "no_lock_in_title": "No Vendor Lock-In",
+        "no_lock_in_desc": "We build for your freedom, not software vendor profits",
+        "outcome_focused_title": "Outcome-Focused",
+        "outcome_focused_desc": "We share in value created, not hours billed",
+        "platform_neutral_title": "Platform Neutral",
+        "platform_neutral_desc": "We fix processes first, then choose the right technology",
+        "transparent_title": "Transparent & Measurable",
+        "transparent_desc": "Clear metrics, honest communication, real results"
+    },
+    "cta": {
+        "headline": "Ready to Unlock Your Business Value?",
+        "subheadline": "Let's discuss how we can reduce costs, eliminate complexity, and increase your ROI",
+        "form_name": "Your Name",
+        "form_email": "Your Email",
+        "form_company": "Company Name",
+        "form_message": "Tell us about your needs (optional)",
+        "button": "Start the Conversation"
+    },
+    "footer": {
+        "tagline": "Freeing business value from unnecessary software",
+        "copyright": "© 2025 Value Unbound Solutions. All rights reserved."
+    }
+}

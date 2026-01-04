@@ -1,99 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Value Unbound Solutions - Freeing business value through Salesforce optimization, automation, and AI." />
-  <title>Home - Value Unbound Solutions</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Value Unbound Solutions - Freeing business value from unnecessary software.">
+    <title>Value Unbound Solutions</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a href="/index.html" class="logo">
-        <img src="/logo.png" alt="Value Unbound Solutions Logo" class="logo-image">
-        <span class="logo-text">Value Unbound Solutions</span>
-      </a>
-      <nav class="nav-links">
-        <a href="/index.html">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/services.html">Services</a>
-        <a href="/approach.html">Approach</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Freeing Business Value from Unnecessary Software</h1>
-        <p>We specialize in Salesforce cost optimization, intelligent automation, and AI-driven process improvement.
-          Unlock your true potential.</p>
-        <div class="hero-cta">
-          <a href="/services.html" class="btn btn-primary">Our Services</a>
-          <a href="/contact.html" class="btn btn-outline" style="margin-left: 1rem;">Get in Touch</a>
+    <!-- Header / Navigation -->
+    <header id="header" class="glass-nav">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/images/logo-placeholder.svg" alt="Value Unbound Solutions" class="logo-img">
+            </a>
+            <nav class="nav-menu">
+                <a href="#hero" data-i18n="nav.home">Home</a>
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#services" data-i18n="nav.services">Services</a>
+                <a href="#vision" data-i18n="nav.vision">Vision</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <select id="lang-switcher" aria-label="Language Switcher">
+                    <option value="en">🇺🇸 EN</option>
+                    <option value="de">🇩🇪 DE</option>
+                    <option value="fr">🇫🇷 FR</option>
+                    <option value="it">🇮🇹 IT</option>
+                    <option value="es">🇪🇸 ES</option>
+                </select>
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <a href="#contact" class="btn btn-primary" data-i18n="nav.get_started">Get Started</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-anim"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title" data-i18n="hero.headline">Freeing Business Value from Unnecessary Software</h1>
+            <p class="hero-subtitle" data-i18n="hero.subheadline">We help companies reduce Salesforce costs, eliminate
+                complexity, and increase ROI through smart automation and AI—without vendor lock-in.</p>
+            <div class="hero-cta-group">
+                <a href="#services" class="btn btn-primary btn-lg" data-i18n="hero.cta_primary">Discover How</a>
+                <a href="#about" class="btn btn-secondary btn-lg" data-i18n="hero.cta_secondary">Learn Our Story</a>
+            </div>
+        </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Why Choose Us?</h2>
-          <p>We don't just implement software; we unbind value.</p>
-        </div>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">⚡</div>
-            <h3>Salesforce Optimization</h3>
-            <p>Reduce technical debt and license costs while maximizing platform value.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">🤖</div>
-            <h3>AI & Automation</h3>
-            <p>Streamline workflows and integrated systems for peak efficiency.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">🎯</div>
-            <h3>Outcome-Driven</h3>
-            <p>Our engagement model is based on tangible value and results, not just hours.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title center-text" data-i18n="about.title">Why Value Unbound Solutions?</h2>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-col">
-          <h4>Value Unbound Solutions</h4>
-          <p style="max-width: 300px; color: #adb5bd;">Freeing business value from unnecessary software, cost
-            optimization, automation, and AI-driven process improvement.</p>
+            <div class="about-intro center-text fade-up">
+                <p data-i18n="about.intro">We believe that technology should serve the business, not the other way
+                    around. Too many companies are trapped in expensive, complex software ecosystems that stifle
+                    innovation. We are here to break those chains.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Value -->
+                <div class="card glass-card fade-up">
+                    <div class="card-icon">💰</div>
+                    <h3 data-i18n="about.card_value_title">Value</h3>
+                    <p data-i18n="about.card_value_desc">Measurable outcomes: cost savings, efficiency, ROI,
+                        reliability—not just promises</p>
+                </div>
+                <!-- Unbound -->
+                <div class="card glass-card fade-up delay-100">
+                    <div class="card-icon">🔓</div>
+                    <h3 data-i18n="about.card_unbound_title">Unbound</h3>
+                    <p data-i18n="about.card_unbound_desc">Freedom from vendor lock-in, forced bundles, and unnecessary
+                        dependencies</p>
+                </div>
+                <!-- Solutions -->
+                <div class="card glass-card fade-up delay-200">
+                    <div class="card-icon">🛠️</div>
+                    <h3 data-i18n="about.card_solutions_title">Solutions</h3>
+                    <p data-i18n="about.card_solutions_desc">Practical, execution-focused outcomes—not just advice or
+                        tools</p>
+                </div>
+            </div>
+            <div class="about-closing center-text fade-up delay-300">
+                <p data-i18n="about.closing">Together, Value Unbound Solutions represents our commitment to separate
+                    real business value from bloated software ecosystems and deliver it in a way that is flexible,
+                    transparent, and sustainable.</p>
+            </div>
         </div>
-        <div class="footer-col">
-          <h4>Navigation</h4>
-          <a href="/index.html">Home</a>
-          <a href="/about.html">About</a>
-          <a href="/services.html">Services</a>
-          <a href="/approach.html">Approach</a>
-          <a href="/contact.html">Contact</a>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="section bg-gradient-mesh">
+        <div class="container">
+            <h2 class="section-title" data-i18n="vision.title">Our Vision</h2>
+            <p class="section-subtitle" data-i18n="vision.main_statement">To help businesses regain control over their
+                systems, reduce unnecessary costs, and increase ROI through intentional technology choices.</p>
+
+            <div class="vision-grid">
+                <div class="vision-item fade-in-right">
+                    <h3 data-i18n="vision.point_1_title">Reduce unnecessary Salesforce cost and complexity</h3>
+                    <p data-i18n="vision.point_1_desc">We audit, optimize, and unbundle where Salesforce doesn't add
+                        value</p>
+                </div>
+                <div class="vision-item fade-in-right delay-100">
+                    <h3 data-i18n="vision.point_2_title">Regain control over systems and processes</h3>
+                    <p data-i18n="vision.point_2_desc">Your business logic should work for you, not for the vendor</p>
+                </div>
+                <div class="vision-item fade-in-right delay-200">
+                    <h3 data-i18n="vision.point_3_title">Increase ROI through smart automation, integration, and AI</h3>
+                    <p data-i18n="vision.point_3_desc">We automate what matters and integrate intelligently</p>
+                </div>
+                <div class="vision-item fade-in-right delay-300">
+                    <h3 data-i18n="vision.point_4_title">Choose tools intentionally—no forced bundles</h3>
+                    <p data-i18n="vision.point_4_desc">Platform-neutral approach focused on your outcomes</p>
+                </div>
+            </div>
+
+            <div class="motto-box glass-card center-text mt-4">
+                <h3 data-i18n="vision.motto">Measured value, not bundled software.</h3>
+            </div>
         </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <p style="color: #adb5bd;">info@valueunbound.com</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title center-text" data-i18n="services.title">What We Do</h2>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card glass-card hover-lift">
+                    <div class="service-icon">⚡</div>
+                    <h3 data-i18n="services.service_1_title">Salesforce Optimization</h3>
+                    <p data-i18n="services.service_1_desc">Audit, streamline, and reduce costs in your existing
+                        Salesforce implementation</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card glass-card hover-lift">
+                    <div class="service-icon">🤖</div>
+                    <h3 data-i18n="services.service_2_title">Process Automation</h3>
+                    <p data-i18n="services.service_2_desc">Automate workflows and eliminate manual work with AI and
+                        smart integrations</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card glass-card hover-lift">
+                    <div class="service-icon">🔗</div>
+                    <h3 data-i18n="services.service_3_title">System Integration</h3>
+                    <p data-i18n="services.service_3_desc">Connect your tools seamlessly without vendor lock-in</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card glass-card hover-lift">
+                    <div class="service-icon">💡</div>
+                    <h3 data-i18n="services.service_4_title">Strategic Advisory</h3>
+                    <p data-i18n="services.service_4_desc">Technology decisions based on your business outcomes, not
+                        vendor roadmaps</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="copyright">
-        &copy; 2026 Value Unbound Solutions. All rights reserved.
-      </div>
-    </div>
-  </footer>
-  <script type="module" src="/src/main.js"></script>
+    </section>
+
+    <!-- Differentiators Section -->
+    <section id="differentiators" class="section">
+        <div class="container">
+            <h2 class="section-title center-text" data-i18n="differentiators.title">Why Choose Us?</h2>
+            <div class="diff-grid is-scroll-x">
+                <div class="diff-card glass-card">
+                    <h3 data-i18n="differentiators.no_lock_in_title">No Vendor Lock-In</h3>
+                    <p data-i18n="differentiators.no_lock_in_desc">We build for your freedom, not software vendor
+                        profits</p>
+                </div>
+                <div class="diff-card glass-card">
+                    <h3 data-i18n="differentiators.outcome_focused_title">Outcome-Focused</h3>
+                    <p data-i18n="differentiators.outcome_focused_desc">We share in value created, not hours billed</p>
+                </div>
+                <div class="diff-card glass-card">
+                    <h3 data-i18n="differentiators.platform_neutral_title">Platform Neutral</h3>
+                    <p data-i18n="differentiators.platform_neutral_desc">We fix processes first, then choose the right
+                        technology</p>
+                </div>
+                <div class="diff-card glass-card">
+                    <h3 data-i18n="differentiators.transparent_title">Transparent & Measurable</h3>
+                    <p data-i18n="differentiators.transparent_desc">Clear metrics, honest communication, real results
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-wrapper glass-card">
+                <div class="contact-header">
+                    <h2 data-i18n="cta.headline">Ready to Unlock Your Business Value?</h2>
+                    <p data-i18n="cta.subheadline">Let's discuss how we can reduce costs, eliminate complexity, and
+                        increase your ROI</p>
+                </div>
+
+                <form id="contact-form" class="contact-form" action="mailto:info@valueunbound.com" method="POST"
+                    enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name" data-i18n="cta.form_name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="cta.form_email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company" data-i18n="cta.form_company">Company Name</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="cta.form_message">Tell us about your needs</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" data-i18n="cta.button">Start the
+                        Conversation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Value Unbound Solutions</h3>
+                <p data-i18n="footer.tagline">Freeing business value from unnecessary software</p>
+            </div>
+            <div class="footer-copyright">
+                <p data-i18n="footer.copyright">© 2025 Value Unbound Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

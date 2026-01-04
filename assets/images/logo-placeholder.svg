@@ -1,0 +1,5 @@
+<svg width="200" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="transparent"/>
+    <text x="10" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#6366f1">Value Unbound</text>
+    <path d="M180 10 L190 25 L180 40" stroke="#06b6d4" stroke-width="3" fill="none"/>
+</svg>

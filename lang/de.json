@@ -1,0 +1,75 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "about": "Über Uns",
+        "services": "Dienstleistungen",
+        "vision": "Vision",
+        "contact": "Kontakt",
+        "get_started": "Loslegen"
+    },
+    "hero": {
+        "headline": "Befreiung des Geschäftswerts von unnötiger Software",
+        "subheadline": "Wir helfen Unternehmen, Salesforce-Kosten zu senken, Komplexität zu beseitigen und den ROI durch intelligente Automatisierung und KI zu steigern – ohne Vendor Lock-in.",
+        "cta_primary": "Erfahren Sie wie",
+        "cta_secondary": "Unsere Geschichte"
+    },
+    "about": {
+        "title": "Warum Value Unbound Solutions?",
+        "intro": "Wir glauben, dass Technologie dem Unternehmen dienen sollte, nicht umgekehrt. Zu viele Unternehmen sind in teuren, komplexen Software-Ökosystemen gefangen, die Innovationen ersticken. Wir sind hier, um diese Ketten zu sprengen.",
+        "card_value_title": "Wert",
+        "card_value_desc": "Messbare Ergebnisse: Kosteneinsparungen, Effizienz, ROI, Zuverlässigkeit – nicht nur Versprechungen",
+        "card_unbound_title": "Ungebunden",
+        "card_unbound_desc": "Freiheit von Vendor Lock-in, Zwangspaketen und unnötigen Abhängigkeiten",
+        "card_solutions_title": "Lösungen",
+        "card_solutions_desc": "Praktische, umsetzungsorientierte Ergebnisse – nicht nur Ratschläge oder Tools",
+        "closing": "Gemeinsam steht Value Unbound Solutions für unser Engagement, echten Geschäftswert von aufgeblähten Software-Ökosystemen zu trennen und ihn auf flexible, transparente und nachhaltige Weise bereitzustellen."
+    },
+    "vision": {
+        "title": "Unsere Vision",
+        "main_statement": "Unternehmen helfen, die Kontrolle über ihre Systeme zurückzugewinnen, unnötige Kosten zu senken und den ROI durch bewusste Technologieentscheidungen zu steigern.",
+        "point_1_title": "Reduzierung unnötiger Salesforce-Kosten und Komplexität",
+        "point_1_desc": "Wir prüfen, optimieren und entflechten, wo Salesforce keinen Mehrwert bietet",
+        "point_2_title": "Kontrolle über Systeme und Prozesse zurückgewinnen",
+        "point_2_desc": "Ihre Geschäftslogik sollte für Sie arbeiten, nicht für den Anbieter",
+        "point_3_title": "Steigerung des ROI durch intelligente Automatisierung, Integration und KI",
+        "point_3_desc": "Wir automatisieren, was wichtig ist, und integrieren intelligent",
+        "point_4_title": "Werkzeuge bewusst auswählen – keine Zwangspakete",
+        "point_4_desc": "Plattformunabhängiger Ansatz mit Fokus auf Ihre Ergebnisse",
+        "motto": "Gemessener Wert, nicht gebündelte Software."
+    },
+    "services": {
+        "title": "Was wir tun",
+        "service_1_title": "Salesforce-Optimierung",
+        "service_1_desc": "Auditieren, rationalisieren und Kosten senken in Ihrer bestehenden Salesforce-Implementierung",
+        "service_2_title": "Prozessautomatisierung",
+        "service_2_desc": "Workflows automatisieren und manuelle Arbeit mit KI und intelligenten Integrationen eliminieren",
+        "service_3_title": "Systemintegration",
+        "service_3_desc": "Verbinden Sie Ihre Tools nahtlos ohne Vendor Lock-in",
+        "service_4_title": "Strategische Beratung",
+        "service_4_desc": "Technologieentscheidungen basierend auf Ihren Geschäftsergebnissen, nicht auf Anbieter-Roadmaps"
+    },
+    "differentiators": {
+        "title": "Warum Sie uns wählen sollten?",
+        "no_lock_in_title": "Kein Vendor Lock-in",
+        "no_lock_in_desc": "Wir bauen für Ihre Freiheit, nicht für Profite von Softwareanbietern",
+        "outcome_focused_title": "Ergebnisorientiert",
+        "outcome_focused_desc": "Wir beteiligen uns am geschaffenen Wert, nicht an abgerechneten Stunden",
+        "platform_neutral_title": "Plattformneutral",
+        "platform_neutral_desc": "Wir reparieren zuerst Prozesse, dann wählen wir die richtige Technologie",
+        "transparent_title": "Transparent & Messbar",
+        "transparent_desc": "Klare Metriken, ehrliche Kommunikation, echte Ergebnisse"
+    },
+    "cta": {
+        "headline": "Bereit, Ihren Geschäftswert freizusetzen?",
+        "subheadline": "Lassen Sie uns besprechen, wie wir Kosten senken, Komplexität beseitigen und Ihren ROI steigern können",
+        "form_name": "Ihr Name",
+        "form_email": "Ihre E-Mail",
+        "form_company": "Firmenname",
+        "form_message": "Erzählen Sie uns von Ihren Bedürfnissen (optional)",
+        "button": "Gespräch beginnen"
+    },
+    "footer": {
+        "tagline": "Befreiung des Geschäftswerts von unnötiger Software",
+        "copyright": "© 2025 Value Unbound Solutions. Alle Rechte vorbehalten."
+    }
+}
