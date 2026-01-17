@@ -16,7 +16,21 @@ No build steps required. This is a static site.
     ```bash
     git clone https://github.com/arunksaini/ValueUnboundSolutions.git
     ```
-2.  **Open `index.html`** in your browser or use a live server extension.
+## Local Development
+
+Since this project uses ES Modules and Fetch API for JSON files, you **cannot** simply open `index.html` file in the browser directly (due to CORS policy). You must run a local server.
+
+### Using Python (Pre-installed on macOS)
+1. Open Terminal in the project folder.
+2. Run:
+   ```bash
+   python3 -m http.server 8000
+   ```
+3. Open `http://localhost:8000` in your browser.
+
+### Using VS Code
+1. Install "Live Server" extension.
+2. Click "Go Live" at the bottom right.
 
 ## Directory Structure
 

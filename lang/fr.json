@@ -1,74 +1,75 @@
 {
     "nav": {
-        "home": "Home",
-        "about": "About",
+        "home": "Accueil",
+        "about": "À propos",
         "services": "Services",
         "vision": "Vision",
         "contact": "Contact",
-        "get_started": "Get Started"
+        "get_started": "Commencer"
     },
     "hero": {
-        "headline": "Freeing Business Value from Unnecessary Software",
-        "subheadline": "We help companies reduce Salesforce costs, eliminate complexity, and increase ROI through smart automation and AI—without vendor lock-in.",
-        "cta_primary": "Discover How",
-        "cta_secondary": "Learn Our Story"
+        "headline": "Libérer la valeur commerciale des logiciels inutiles",
+        "subheadline": "Nous aidons les entreprises à réduire les coûts Salesforce, à éliminer la complexité et à augmenter le retour sur investissement grâce à l'automatisation intelligente et à l'IA, sans dépendance vis-à-vis des fournisseurs.",
+        "cta_primary": "Découvrir comment",
+        "cta_secondary": "Notre histoire"
     },
     "about": {
-        "title": "Why Value Unbound Solutions?",
-        "card_value_title": "Value",
-        "card_value_desc": "Measurable outcomes: cost savings, efficiency, ROI, reliability—not just promises",
-        "card_unbound_title": "Unbound",
-        "card_unbound_desc": "Freedom from vendor lock-in, forced bundles, and unnecessary dependencies",
+        "title": "Pourquoi Value Unbound Solutions ?",
+        "intro": "Nous croyons que la technologie doit servir l'entreprise, et non l'inverse. Trop d'entreprises sont piégées dans des écosystèmes logiciels coûteux et complexes qui étouffent l'innovation. Nous sommes là pour briser ces chaînes.",
+        "card_value_title": "Valeur",
+        "card_value_desc": "Résultats mesurables : économies de coûts, efficacité, retour sur investissement, fiabilité - pas juste des promesses",
+        "card_unbound_title": "Liberté",
+        "card_unbound_desc": "Liberté vis-à-vis du verrouillage fournisseur, des offres groupées forcées et des dépendances inutiles",
         "card_solutions_title": "Solutions",
-        "card_solutions_desc": "Practical, execution-focused outcomes—not just advice or tools",
-        "closing": "Together, Value Unbound Solutions represents our commitment to separate real business value from bloated software ecosystems and deliver it in a way that is flexible, transparent, and sustainable."
+        "card_solutions_desc": "Résultats pratiques et axés sur l'exécution - pas juste des conseils ou des outils",
+        "closing": "Ensemble, Value Unbound Solutions représente notre engagement à séparer la véritable valeur commerciale des écosystèmes logiciels gonflés et à la livrer de manière flexible, transparente et durable."
     },
     "vision": {
-        "title": "Our Vision",
-        "main_statement": "To help businesses regain control over their systems, reduce unnecessary costs, and increase ROI through intentional technology choices.",
-        "point_1_title": "Reduce unnecessary Salesforce cost and complexity",
-        "point_1_desc": "We audit, optimize, and unbundle where Salesforce doesn't add value",
-        "point_2_title": "Regain control over systems and processes",
-        "point_2_desc": "Your business logic should work for you, not for the vendor",
-        "point_3_title": "Increase ROI through smart automation, integration, and AI",
-        "point_3_desc": "We automate what matters and integrate intelligently",
-        "point_4_title": "Choose tools intentionally—no forced bundles",
-        "point_4_desc": "Platform-neutral approach focused on your outcomes",
-        "motto": "Measured value, not bundled software."
+        "title": "Notre Vision",
+        "main_statement": "Aider les entreprises à reprendre le contrôle de leurs systèmes, à réduire les coûts inutiles et à augmenter le retour sur investissement grâce à des choix technologiques intentionnels.",
+        "point_1_title": "Réduire les coûts et la complexité inutiles de Salesforce",
+        "point_1_desc": "Nous auditons, optimisons et dégroupant là où Salesforce n'apporte pas de valeur",
+        "point_2_title": "Reprendre le contrôle des systèmes et des processus",
+        "point_2_desc": "Votre logique commerciale doit travailler pour vous, pas pour le fournisseur",
+        "point_3_title": "Augmenter le ROI grâce à l'automatisation intelligente, l'intégration et l'IA",
+        "point_3_desc": "Nous automatisons ce qui compte et intégrons intelligemment",
+        "point_4_title": "Choisir les outils intentionnellement - pas de forçage",
+        "point_4_desc": "Approche neutre vis-à-vis des plates-formes axée sur vos résultats",
+        "motto": "Valeur mesurée, pas logiciel groupé."
     },
     "services": {
-        "title": "What We Do",
-        "service_1_title": "Salesforce Optimization",
-        "service_1_desc": "Audit, streamline, and reduce costs in your existing Salesforce implementation",
-        "service_2_title": "Process Automation",
-        "service_2_desc": "Automate workflows and eliminate manual work with AI and smart integrations",
-        "service_3_title": "System Integration",
-        "service_3_desc": "Connect your tools seamlessly without vendor lock-in",
-        "service_4_title": "Strategic Advisory",
-        "service_4_desc": "Technology decisions based on your business outcomes, not vendor roadmaps"
+        "title": "Ce que nous faisons",
+        "service_1_title": "Optimisation Salesforce",
+        "service_1_desc": "Auditer, rationaliser et réduire les coûts de votre implémentation Salesforce existante",
+        "service_2_title": "Automatisation des processus",
+        "service_2_desc": "Automatiser les flux de travail et éliminer le travail manuel avec l'IA et des intégrations intelligentes",
+        "service_3_title": "Intégration système",
+        "service_3_desc": "Connectez vos outils de manière transparente sans verrouillage fournisseur",
+        "service_4_title": "Conseil stratégique",
+        "service_4_desc": "Décisions technologiques basées sur vos résultats commerciaux, pas sur les feuilles de route des fournisseurs"
     },
     "differentiators": {
-        "title": "Why Choose Us?",
-        "no_lock_in_title": "No Vendor Lock-In",
-        "no_lock_in_desc": "We build for your freedom, not software vendor profits",
-        "outcome_focused_title": "Outcome-Focused",
-        "outcome_focused_desc": "We share in value created, not hours billed",
-        "platform_neutral_title": "Platform Neutral",
-        "platform_neutral_desc": "We fix processes first, then choose the right technology",
-        "transparent_title": "Transparent & Measurable",
-        "transparent_desc": "Clear metrics, honest communication, real results"
+        "title": "Pourquoi nous choisir ?",
+        "no_lock_in_title": "Pas de verrouillage fournisseur",
+        "no_lock_in_desc": "Nous construisons pour votre liberté, pas pour les profits des éditeurs de logiciels",
+        "outcome_focused_title": "Axé sur les résultats",
+        "outcome_focused_desc": "Nous partageons la valeur créée, pas les heures facturées",
+        "platform_neutral_title": "Neutre vis-à-vis des plates-formes",
+        "platform_neutral_desc": "Nous réparons d'abord les processus, puis choisissons la bonne technologie",
+        "transparent_title": "Transparent et mesurable",
+        "transparent_desc": "Métriques claires, communication honnête, résultats réels"
     },
     "cta": {
-        "headline": "Ready to Unlock Your Business Value?",
-        "subheadline": "Let's discuss how we can reduce costs, eliminate complexity, and increase your ROI",
-        "form_name": "Your Name",
-        "form_email": "Your Email",
-        "form_company": "Company Name",
-        "form_message": "Tell us about your needs (optional)",
-        "button": "Start the Conversation"
+        "headline": "Prêt à libérer votre valeur commerciale ?",
+        "subheadline": "Discutons de la manière dont nous pouvons réduire les coûts, éliminer la complexité et augmenter votre retour sur investissement",
+        "form_name": "Votre nom",
+        "form_email": "Votre email",
+        "form_company": "Nom de l'entreprise",
+        "form_message": "Parlez-nous de vos besoins (facultatif)",
+        "button": "Commencer la conversation"
     },
     "footer": {
-        "tagline": "Freeing business value from unnecessary software",
-        "copyright": "© 2025 Value Unbound Solutions. All rights reserved."
+        "tagline": "Libérer la valeur commerciale des logiciels inutiles",
+        "copyright": "© 2025 Value Unbound Solutions. Tous droits réservés."
     }
 }
