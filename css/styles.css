@@ -318,6 +318,7 @@ h6 {
     margin-bottom: 1.5rem;
     background: var(--gradient-text);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-bottom: 0.2em;
     /* prevent clipping descenders */
@@ -578,6 +579,28 @@ h6 {
 .footer-copyright {
     color: var(--text-muted);
     font-size: 0.9rem;
+}
+
+.location-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-main);
+    cursor: default;
+    transition: all var(--transition-fast);
+}
+
+.location-badge:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
 }
 
 /* ==========================================================================
