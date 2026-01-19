@@ -98,57 +98,42 @@ window.addEventListener('scroll', scrollActive);
 // ==========================================================================
 // Form Handling (Google Sheets Integration)
 // ==========================================================================
-// Debug: Console log to verify script is running
-console.log('Contact Form Handler - Loading...');
-
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby2cnGsTz7OC36cF0vsyaJuxwUr4Bwxk_RC5te2jqBsovLifaFxqhOP786Cl29dxaG_/exec'; // User needs to update this
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby2cnGsTz7OC36cF0vsyaJuxwUr4Bwxk_RC5te2jqBsovLifaFxqhOP786Cl29dxaG_/exec';
 
 const contactForm = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
 
 if (contactForm) {
-    console.log('Contact Form found, attaching listener...');
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        console.log('Form submission intercepted!');
 
-        // 1. Basic validation
         const formData = new FormData(contactForm);
         const data = Object.fromEntries(formData.entries());
 
         if (!data.name || !data.email || !data.message) {
-            console.warn('Validation failed:', { name: !!data.name, email: !!data.email, message: !!data.message });
             showStatus('Please fill in all required fields.', 'error');
             return;
         }
 
-        console.log('Final payload to send:', data);
-
-        // 2. Honeypot check (redundant but good practice)
         if (data._honeypot) {
-            console.warn('Bot detected via honeypot');
-            showStatus('Thank you for your submission!', 'success'); // Fake success for bots
+            showStatus('Thank you for your submission!', 'success');
             contactForm.reset();
             return;
         }
 
-        // 3. Submit to Google Apps Script
         showStatus('Sending...', 'info');
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         if (submitBtn) submitBtn.disabled = true;
 
         try {
-            console.log('Sending data to GAS:', APPS_SCRIPT_URL);
-
-            // Note: Sending as URLSearchParams to avoid preflight issues in some environments
             const params = new URLSearchParams();
             for (const key in data) {
                 params.append(key, data[key]);
             }
 
-            const response = await fetch(APPS_SCRIPT_URL, {
+            await fetch(APPS_SCRIPT_URL, {
                 method: 'POST',
-                mode: 'no-cors', // Opaque response due to GAS redirect
+                mode: 'no-cors',
                 cache: 'no-cache',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
@@ -156,12 +141,11 @@ if (contactForm) {
                 body: params.toString()
             });
 
-            console.log('Fetch completed (may be opaque)');
             showStatus('Message sent successfully! We will get back to you soon.', 'success');
             contactForm.reset();
         } catch (error) {
             console.error('Submission error:', error);
-            showStatus('Sorry, there was an error sending your message. Please try again later or email us directly.', 'error');
+            showStatus('Sorry, there was an error sending your message. Please try again later.', 'error');
         } finally {
             if (submitBtn) submitBtn.disabled = false;
         }
