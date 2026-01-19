@@ -117,9 +117,12 @@ if (contactForm) {
         const data = Object.fromEntries(formData.entries());
 
         if (!data.name || !data.email || !data.message) {
+            console.warn('Validation failed:', { name: !!data.name, email: !!data.email, message: !!data.message });
             showStatus('Please fill in all required fields.', 'error');
             return;
         }
+
+        console.log('Final payload to send:', data);
 
         // 2. Honeypot check (redundant but good practice)
         if (data._honeypot) {
