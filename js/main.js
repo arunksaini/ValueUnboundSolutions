@@ -98,14 +98,19 @@ window.addEventListener('scroll', scrollActive);
 // ==========================================================================
 // Form Handling (Google Sheets Integration)
 // ==========================================================================
+// Debug: Console log to verify script is running
+console.log('Contact Form Handler - Loading...');
+
 const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby2cnGsTz7OC36cF0vsyaJuxwUr4Bwxk_RC5te2jqBsovLifaFxqhOP786Cl29dxaG_/exec'; // User needs to update this
 
 const contactForm = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
 
-if (contactForm && formStatus) {
+if (contactForm) {
+    console.log('Contact Form found, attaching listener...');
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
+        console.log('Form submission intercepted!');
 
         // 1. Basic validation
         const formData = new FormData(contactForm);
@@ -127,38 +132,48 @@ if (contactForm && formStatus) {
         // 3. Submit to Google Apps Script
         showStatus('Sending...', 'info');
         const submitBtn = contactForm.querySelector('button[type="submit"]');
-        submitBtn.disabled = true;
+        if (submitBtn) submitBtn.disabled = true;
 
         try {
-            // Check if URL is configured
-            if (APPS_SCRIPT_URL === 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
-                throw new Error('Form endpoint not configured. Please add the Apps Script URL in js/main.js');
+            console.log('Sending data to GAS:', APPS_SCRIPT_URL);
+
+            // Note: Sending as URLSearchParams to avoid preflight issues in some environments
+            const params = new URLSearchParams();
+            for (const key in data) {
+                params.append(key, data[key]);
             }
 
             const response = await fetch(APPS_SCRIPT_URL, {
                 method: 'POST',
-                mode: 'no-cors', // Use no-cors for GAS to avoid preflight issues if not handled
+                mode: 'no-cors', // Opaque response due to GAS redirect
                 cache: 'no-cache',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/x-www-form-urlencoded'
                 },
-                body: JSON.stringify(data)
+                body: params.toString()
             });
 
-            // Note: with no-cors, we can't read the response body, but we can assume success if no error is thrown
+            console.log('Fetch completed (may be opaque)');
             showStatus('Message sent successfully! We will get back to you soon.', 'success');
             contactForm.reset();
         } catch (error) {
             console.error('Submission error:', error);
             showStatus('Sorry, there was an error sending your message. Please try again later or email us directly.', 'error');
         } finally {
-            submitBtn.disabled = false;
+            if (submitBtn) submitBtn.disabled = false;
         }
     });
+} else {
+    console.error('Contact Form element (#contact-form) NOT found!');
 }
 
 function showStatus(message, type) {
-    if (!formStatus) return;
+    console.log('Status update:', message, type);
+    if (!formStatus) {
+        // Fallback if status div is missing
+        alert(message);
+        return;
+    }
 
     formStatus.textContent = message;
     formStatus.style.display = 'block';
