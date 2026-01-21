@@ -30,7 +30,7 @@
 
     /* Spacing & Layout */
     --container-width: 1200px;
-    --header-height: 80px;
+    --header-height: 100px;
     --radius-md: 12px;
     --radius-lg: 24px;
 
@@ -64,6 +64,8 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+    /* Header height (100px) + padding */
 }
 
 body {
@@ -216,12 +218,15 @@ h6 {
 
 .logo {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 .logo-img {
-    height: 120px;
+    height: 90px;
     width: auto;
+    padding-top: 0.5rem;
     transition: transform var(--transition-fast), filter var(--transition-fast);
     filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
     position: relative;
@@ -231,6 +236,29 @@ h6 {
 .logo:hover .logo-img {
     transform: scale(1.05);
     filter: drop-shadow(0 8px 20px rgba(99, 102, 241, 0.4));
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.company-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-main);
+    line-height: 1.2;
+}
+
+.company-location {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    line-height: 1.2;
 }
 
 .nav-menu {
@@ -558,6 +586,20 @@ h6 {
     outline: none;
     border-color: var(--primary);
     background: rgba(255, 255, 255, 0.1);
+}
+
+/* About Section Styles */
+.company-statement {
+    max-width: 800px;
+    margin: 3rem auto 0;
+    padding: 2.5rem;
+}
+
+.company-statement p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-main);
+    font-weight: 500;
 }
 
 /* Footer */

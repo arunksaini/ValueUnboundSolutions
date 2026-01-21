@@ -81,7 +81,7 @@ const scrollActive = () => {
 
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 100; // Offset for header
+        const sectionTop = current.offsetTop - 120; // Offset for header (100px) + padding
         const sectionId = current.getAttribute('id');
         const link = document.querySelector(`.nav-menu a[href*=${sectionId}]`);
 
