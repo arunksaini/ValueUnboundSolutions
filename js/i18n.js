@@ -82,6 +82,9 @@ class I18n {
     }
 
     updateUI() {
+        // Re-query elements to catch items in the <head> or dynamically added
+        this.elements = document.querySelectorAll('[data-i18n]');
+
         this.elements.forEach(el => {
             const key = el.getAttribute('data-i18n');
             const translation = this.getNestedTranslation(this.translations, key);

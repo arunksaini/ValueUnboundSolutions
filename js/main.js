@@ -115,6 +115,12 @@ if (contactForm) {
             return;
         }
 
+        // Trigger Google Ads Conversion Tracking
+        if (typeof gtag_report_conversion === 'function') {
+            gtag_report_conversion();
+        }
+
+
         if (data._honeypot) {
             showStatus('Thank you for your submission!', 'success');
             contactForm.reset();

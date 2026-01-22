@@ -4,8 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Value Unbound Solutions - Freeing business value from unnecessary software.">
-    <title>Value Unbound Solutions</title>
+    <meta name="description"
+        content="Stop overpaying for Salesforce. We help German SMEs and startups reduce license waste, unbundle bloated features, and optimize CRM ROI. Get your free 60-minute Health Check."
+        data-i18n="metadata.description" data-i18n-target="content">
+    <meta name="keywords"
+        content="Salesforce cost reduction, Salesforce license optimization, Salesforce consultant Berlin, Salesforce Kosten optimieren, Salesforce Lizenzen sparen, Mittelstand CRM, Salesforce ROI"
+        data-i18n="metadata.keywords" data-i18n-target="content">
+    <meta name="geo.region" content="DE-BE" />
+    <meta name="geo.placename" content="Berlin" />
+    <meta name="geo.position" content="52.5200;13.4050" />
+    <meta name="ICBM" content="52.5200, 13.4050" />
+    <title data-i18n="metadata.title">Salesforce Cost Optimization & License Audit | Value Unbound</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://valueunbound.com/">
+    <meta property="og:title" content="Value Unbound Solutions | Salesforce Optimization & B2B Consulting">
+    <meta property="og:description"
+        content="Freeing business value from unnecessary software ecosystems. Expert Salesforce optimization and outcome-focused B2B consulting.">
+    <meta property="og:image" content="https://valueunbound.com/assets/images/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://valueunbound.com/">
+    <meta property="twitter:title" content="Value Unbound Solutions | Salesforce Optimization & B2B Consulting">
+    <meta property="twitter:description"
+        content="Freeing business value from unnecessary software ecosystems. Expert Salesforce optimization and outcome-focused B2B consulting.">
+    <meta property="twitter:image" content="https://valueunbound.com/assets/images/logo.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Value Unbound Solutions",
+      "image": "https://www.valueunbound.com/assets/images/logo.png",
+      "@id": "https://www.valueunbound.com/",
+      "url": "https://www.valueunbound.com/",
+      "serviceType": "Salesforce Cost Optimization & Consulting",
+      "founder": {
+        "@type": "Person",
+        "name": "Arun Kumar Saini"
+      },
+      "description": "Expert consultancy focused on removing the Salesforce Complexity Trap for the German Mittelstand.",
+      "areaServed": [
+        "Europe",
+        "America",
+        "USA",
+        "Canada",
+        "England",
+        "Germany",
+        "Berlin"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Germany",
+        "addressCountry": "DE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 52.5200,
+        "longitude": 13.4050
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/value-unbound-solutions"
+      ]
+    }
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +105,26 @@
 
     gtag('config', 'G-52X1CVWHNN');
 </script>
+
+<!-- Google tag (gtag.js) event - delayed navigation helper -->
+<script>
+    // Helper function to delay opening a URL until a gtag event is sent.
+    // Call it in response to an action that should navigate to a URL.
+    function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof url === 'string') {
+                window.location = url;
+            }
+        };
+        gtag('event', 'conversion_event_submit_lead_form_1', {
+            'event_callback': callback,
+            'event_timeout': 2000,
+            // <event_parameters>
+        });
+        return false;
+    }
+</script>
+
 
 <body>
     <!-- Header / Navigation -->
@@ -305,6 +403,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script type="module" src="js/analytics.js"></script>
     <script type="module" src="js/main.js"></script>
 </body>
 
