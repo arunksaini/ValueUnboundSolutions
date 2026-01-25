@@ -102,5 +102,11 @@
         "gdpr_compliant": "DSGVO-konform",
         "iso_compliant": "ISO 27001 Standards",
         "privacy_statement": "Wir verpflichten uns, Ihre Daten und Privatsphäre gemäß den deutschen und europäischen Datenschutzbestimmungen (DSGVO) zu schützen."
+    },
+    "cookies": {
+        "title": "Cookie-Einstellungen",
+        "text": "Wir verwenden Cookies, um den Datenverkehr zu analysieren und Ihre Erfahrung zu verbessern. Akzeptieren Sie?",
+        "accept": "Akzeptieren",
+        "decline": "Ablehnen"
     }
 }

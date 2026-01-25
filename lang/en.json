@@ -102,5 +102,11 @@
         "gdpr_compliant": "GDPR Compliant",
         "iso_compliant": "ISO 27001 Standards",
         "privacy_statement": "We are committed to protecting your data and privacy in accordance with German and European data protection regulations (GDPR)."
+    },
+    "cookies": {
+        "title": "Cookie Settings",
+        "text": "We use cookies to analyze traffic and improve your experience. Do you accept?",
+        "accept": "Accept",
+        "decline": "Decline"
     }
 }
