@@ -9,6 +9,7 @@
         "about": "Nosotros",
         "services": "Servicios",
         "vision": "Visión",
+        "founder": "Fundador",
         "contact": "Contacto",
         "get_started": "Empezar"
     },
@@ -52,7 +53,9 @@
         "service_3_title": "Integración de sistemas",
         "service_3_desc": "Conecte sus herramientas sin problemas sin bloqueo de proveedor",
         "service_4_title": "Asesoramiento estratégico",
-        "service_4_desc": "Decisiones tecnológicas basadas en sus resultados comerciales, no en las hojas de ruta de los proveedores"
+        "service_4_desc": "Decisiones tecnológicas basadas en sus resultados comerciales, no en las hojas de ruta de los proveedores",
+        "service_5_title": "Soluciones personalizadas",
+        "service_5_desc": "A diferencia de los grandes proveedores de CRM, creamos soluciones específicamente adaptadas a sus necesidades comerciales únicas"
     },
     "differentiators": {
         "title": "¿Por qué elegirnos?",
@@ -64,6 +67,22 @@
         "platform_neutral_desc": "Primero arreglamos los procesos, luego elegimos la tecnología adecuada",
         "transparent_title": "Transparente y medible",
         "transparent_desc": "Métricas claras, comunicación honesta, resultados reales"
+    },
+    "founder": {
+        "title": "Conozca al Fundador",
+        "name": "Arun Kumar Saini",
+        "role": "Fundador & Lead Solutions Architect",
+        "experience_years": "15+ años en la industria IT",
+        "certification": "Salesforce Certified Technical Architect",
+        "bio_p1": "Con más de 15 años de experiencia en tecnología empresarial, fundé Value Unbound Solutions sobre una creencia simple: la tecnología debe empoderar a las empresas, no limitarlas.",
+        "bio_p2": "A lo largo de mi carrera trabajando con instituciones financieras líderes en los Estados Unidos, el Reino Unido y Europa, he ayudado a las organizaciones a optimizar implementaciones complejas de Salesforce, reducir costos por millones y recuperar el control sobre sus ecosistemas tecnológicos. Trabajo con los clientes como un socio de confianza, no solo como un proveedor – trato sus desafíos como míos.",
+        "bio_p3": "Lo que nos hace únicos es nuestro enfoque en resultados prácticos y medibles a través de estrategias innovadoras de reducción de costos y automatización inteligente. Ya sea eliminar el desperdicio de licencias, optimizar flujos de trabajo o integrar sistemas sin bloqueo de proveedor, ofrecemos soluciones que funcionan para su negocio.",
+        "global_experience": "Confiado por clientes en",
+        "region_us": "Estados Unidos",
+        "region_uk": "Reino Unido",
+        "region_eu": "Europa",
+        "linkedin_cta": "Conectar en LinkedIn",
+        "expertise_title": "Experiencia & Certificaciones"
     },
     "cta": {
         "headline": "¿Listo para desbloquear su valor empresarial?",
@@ -77,6 +96,11 @@
     "footer": {
         "tagline": "Liberando el valor empresarial del software innecesario",
         "location": "Diseñado en Alemania 🇩🇪",
-        "copyright": "© 2025 Value Unbound Solutions. Todos los derechos reservados."
+        "copyright": "© 2026 Value Unbound Solutions. Todos los derechos reservados.",
+        "address": "Im Gehölz 31, Blankenfelde-Mahlow<br>Brandenburg 15827, Alemania",
+        "compliance_title": "Cumplimiento y privacidad",
+        "gdpr_compliant": "Cumple con GDPR",
+        "iso_compliant": "Estándares ISO 27001",
+        "privacy_statement": "Estamos comprometidos a proteger sus datos y privacidad de acuerdo con las regulaciones alemanas y europeas de protección de datos (GDPR)."
     }
 }

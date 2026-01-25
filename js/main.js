@@ -1,5 +1,3 @@
-import { i18n } from './i18n.js';
-
 console.log('Value Unbound Solutions - Initializing...');
 
 // ==========================================================================
@@ -73,13 +71,13 @@ if (mobileBtn && navMenu) {
 // ==========================================================================
 // Navigation Active State on Scroll
 // ==========================================================================
-const sections = document.querySelectorAll('section');
+const navSections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-menu a');
 
 const scrollActive = () => {
     const scrollY = window.pageYOffset;
 
-    sections.forEach(current => {
+    navSections.forEach(current => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 120; // Offset for header (100px) + padding
         const sectionId = current.getAttribute('id');
@@ -190,3 +188,84 @@ function showStatus(message, type) {
         formStatus.style.border = '1px solid #2196f3';
     }
 }
+
+// ==========================================================================
+// Virtual Pageview Tracking (for Google Analytics)
+// ==========================================================================
+// This creates separate URL paths for each section, allowing GA to track
+// which sections users view while maintaining smooth scroll experience
+
+const sections = [
+    { id: 'hero', path: '/' },
+    { id: 'about', path: '/about' },
+    { id: 'services', path: '/services' },
+    { id: 'vision', path: '/vision' },
+    { id: 'founder', path: '/founder' },
+    { id: 'contact', path: '/contact' }
+];
+
+let currentSection = '/';
+
+// Track when a section becomes visible
+const trackSectionView = (sectionId, sectionPath) => {
+    // Only track if this is a new section
+    if (currentSection === sectionPath) return;
+
+    currentSection = sectionPath;
+
+    // Update URL without page reload (History API)
+    if (window.history && window.history.pushState) {
+        window.history.pushState(
+            { section: sectionId },
+            '',
+            sectionPath
+        );
+    }
+
+    // Send virtual pageview to Google Analytics
+    if (typeof gtag === 'function') {
+        gtag('config', 'G-52X1CVWHNN', {
+            'page_path': sectionPath,
+            'page_title': document.title + ' - ' + sectionId.charAt(0).toUpperCase() + sectionId.slice(1)
+        });
+
+        console.log('Virtual Pageview:', sectionPath);
+    }
+};
+
+// Use IntersectionObserver to detect when sections come into view
+const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        // Section is at least 50% visible
+        if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+            const sectionData = sections.find(s => s.id === entry.target.id);
+            if (sectionData) {
+                trackSectionView(sectionData.id, sectionData.path);
+            }
+        }
+    });
+}, {
+    threshold: [0.5], // Trigger when 50% of section is visible
+    rootMargin: '-10% 0px -10% 0px' // Account for sticky header
+});
+
+// Observe all sections
+sections.forEach(({ id }) => {
+    const element = document.getElementById(id);
+    if (element) {
+        sectionObserver.observe(element);
+    }
+});
+
+// Handle browser back/forward buttons
+window.addEventListener('popstate', (event) => {
+    if (event.state && event.state.section) {
+        const element = document.getElementById(event.state.section);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+});
+
+// Track initial page load
+trackSectionView('hero', '/');

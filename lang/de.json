@@ -9,6 +9,7 @@
         "about": "Über Uns",
         "services": "Dienstleistungen",
         "vision": "Vision",
+        "founder": "Gründer",
         "contact": "Kontakt",
         "get_started": "Loslegen"
     },
@@ -52,7 +53,9 @@
         "service_3_title": "Systemintegration",
         "service_3_desc": "Verbinden Sie Ihre Tools nahtlos ohne Vendor Lock-in",
         "service_4_title": "Strategische Beratung",
-        "service_4_desc": "Technologieentscheidungen basierend auf Ihren Geschäftsergebnissen, nicht auf Anbieter-Roadmaps"
+        "service_4_desc": "Technologieentscheidungen basierend auf Ihren Geschäftsergebnissen, nicht auf Anbieter-Roadmaps",
+        "service_5_title": "Maßgeschneiderte Lösungen",
+        "service_5_desc": "Im Gegensatz zu großen CRM-Anbietern entwickeln wir Lösungen speziell auf Ihre individuellen Geschäftsanforderungen zugeschnitten"
     },
     "differentiators": {
         "title": "Warum Sie uns wählen sollten?",
@@ -64,6 +67,22 @@
         "platform_neutral_desc": "Wir reparieren zuerst Prozesse, dann wählen wir die richtige Technologie",
         "transparent_title": "Transparent & Messbar",
         "transparent_desc": "Klare Metriken, ehrliche Kommunikation, echte Ergebnisse"
+    },
+    "founder": {
+        "title": "Lernen Sie den Gründer kennen",
+        "name": "Arun Kumar Saini",
+        "role": "Gründer & Lead Solutions Architect",
+        "experience_years": "15+ Jahre in der IT-Branche",
+        "certification": "Salesforce Certified Technical Architect",
+        "bio_p1": "Mit über 15 Jahren Erfahrung in der Unternehmenstechnologie habe ich Value Unbound Solutions auf einer einfachen Überzeugung gegründet: Technologie sollte Unternehmen stärken, nicht einschränken.",
+        "bio_p2": "Im Laufe meiner Karriere bei führenden Finanzinstituten in den USA, Großbritannien und Europa habe ich Organisationen dabei geholfen, komplexe Salesforce-Implementierungen zu optimieren, Kosten in Millionenhöhe zu reduzieren und die Kontrolle über ihre Technologie-Ökosysteme zurückzugewinnen. Ich arbeite mit Kunden als vertrauenswürdiger Partner, nicht nur als Anbieter – ich behandle Ihre Herausforderungen wie meine eigenen.",
+        "bio_p3": "Was uns einzigartig macht, ist unser Fokus auf praktische, messbare Ergebnisse durch innovative Kostenreduktionsstrategien und intelligente Automatisierung. Ob es darum geht, Lizenzverschwendung zu beseitigen, Workflows zu optimieren oder Systeme ohne Vendor Lock-in zu integrieren – wir liefern Lösungen, die für Ihr Unternehmen funktionieren.",
+        "global_experience": "Vertraut von Kunden in",
+        "region_us": "USA",
+        "region_uk": "Vereinigtes Königreich",
+        "region_eu": "Europa",
+        "linkedin_cta": "Auf LinkedIn verbinden",
+        "expertise_title": "Expertise & Zertifizierungen"
     },
     "cta": {
         "headline": "Bereit, Ihren Geschäftswert freizusetzen?",
@@ -77,6 +96,11 @@
     "footer": {
         "tagline": "Befreiung des Geschäftswerts von unnötiger Software",
         "location": "Entwickelt in Deutschland 🇩🇪",
-        "copyright": "© 2025 Value Unbound Solutions. Alle Rechte vorbehalten."
+        "copyright": "© 2026 Value Unbound Solutions. Alle Rechte vorbehalten.",
+        "address": "Im Gehölz 31, Blankenfelde-Mahlow<br>Brandenburg 15827, Deutschland",
+        "compliance_title": "Compliance & Datenschutz",
+        "gdpr_compliant": "DSGVO-konform",
+        "iso_compliant": "ISO 27001 Standards",
+        "privacy_statement": "Wir verpflichten uns, Ihre Daten und Privatsphäre gemäß den deutschen und europäischen Datenschutzbestimmungen (DSGVO) zu schützen."
     }
 }

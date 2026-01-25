@@ -9,6 +9,7 @@
         "about": "About",
         "services": "Services",
         "vision": "Vision",
+        "founder": "Founder",
         "contact": "Contact",
         "get_started": "Get Started"
     },
@@ -52,7 +53,9 @@
         "service_3_title": "System Integration",
         "service_3_desc": "Connect your tools seamlessly without vendor lock-in",
         "service_4_title": "Strategic Advisory",
-        "service_4_desc": "Technology decisions based on your business outcomes, not vendor roadmaps"
+        "service_4_desc": "Technology decisions based on your business outcomes, not vendor roadmaps",
+        "service_5_title": "Custom-Built Solutions",
+        "service_5_desc": "Unlike large CRM vendors, we build solutions specifically tailored to your unique business needs"
     },
     "differentiators": {
         "title": "Why Choose Us?",
@@ -64,6 +67,22 @@
         "platform_neutral_desc": "We fix processes first, then choose the right technology",
         "transparent_title": "Transparent & Measurable",
         "transparent_desc": "Clear metrics, honest communication, real results"
+    },
+    "founder": {
+        "title": "Meet the Founder",
+        "name": "Arun Kumar Saini",
+        "role": "Founder & Lead Solutions Architect",
+        "experience_years": "15+ Years in IT Industry",
+        "certification": "Salesforce Certified Technical Architect",
+        "bio_p1": "With over 15 years of experience in enterprise technology, I founded Value Unbound Solutions on a simple belief: technology should empower businesses, not constrain them.",
+        "bio_p2": "Throughout my career working with leading financial institutions across the US, UK, and Europe, I've helped organizations optimize complex Salesforce implementations, reduce costs by millions, and reclaim control over their technology ecosystems. I work with clients as a trusted partner, not just a vendor—treating your challenges as my own.",
+        "bio_p3": "What makes us unique is our focus on practical, measurable outcomes through innovative cost reduction strategies and intelligent automation. Whether it's eliminating license waste, streamlining workflows, or integrating systems without vendor lock-in, we deliver solutions that work for your business.",
+        "global_experience": "Trusted by clients across",
+        "region_us": "United States",
+        "region_uk": "United Kingdom",
+        "region_eu": "Europe",
+        "linkedin_cta": "Connect on LinkedIn",
+        "expertise_title": "Expertise & Certifications"
     },
     "cta": {
         "headline": "Ready to Unlock Your Business Value?",
@@ -77,6 +96,11 @@
     "footer": {
         "tagline": "Freeing business value from unnecessary software",
         "location": "Engineered in Germany 🇩🇪",
-        "copyright": "© 2025 Value Unbound Solutions. All rights reserved."
+        "copyright": "© 2026 Value Unbound Solutions. All rights reserved.",
+        "address": "Im Gehölz 31, Blankenfelde-Mahlow<br>Brandenburg 15827, Germany",
+        "compliance_title": "Compliance & Privacy",
+        "gdpr_compliant": "GDPR Compliant",
+        "iso_compliant": "ISO 27001 Standards",
+        "privacy_statement": "We are committed to protecting your data and privacy in accordance with German and European data protection regulations (GDPR)."
     }
 }

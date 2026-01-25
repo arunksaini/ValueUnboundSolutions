@@ -113,5 +113,5 @@ class I18n {
     }
 }
 
-// Export instance
-export const i18n = new I18n();
+// Create global instance
+window.i18n = new I18n();

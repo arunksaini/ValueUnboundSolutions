@@ -191,7 +191,7 @@ h6 {
 
 .section-title {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     text-align: center;
 }
 
@@ -430,7 +430,7 @@ h6 {
 
 .about-intro {
     max-width: 800px;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 2rem auto;
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--text-muted);
@@ -452,7 +452,7 @@ h6 {
 }
 
 .about-closing {
-    margin-top: 4rem;
+    margin-top: 3rem;
     font-size: 1.2rem;
     color: var(--text-muted);
     max-width: 800px;
@@ -478,8 +478,8 @@ h6 {
 }
 
 .motto-box {
-    margin-top: 4rem;
-    padding: 3rem;
+    margin-top: 3rem;
+    padding: 2.5rem;
     font-size: 1.5rem;
     border: 1px solid var(--accent);
 }
@@ -539,7 +539,7 @@ h6 {
 
 /* Contact */
 .contact-section {
-    padding-bottom: 150px;
+    padding-bottom: 80px;
 }
 
 .contact-wrapper {
@@ -591,8 +591,8 @@ h6 {
 /* About Section Styles */
 .company-statement {
     max-width: 800px;
-    margin: 3rem auto 0;
-    padding: 2.5rem;
+    margin: 2rem auto 0;
+    padding: 2rem;
 }
 
 .company-statement p {
@@ -652,6 +652,221 @@ h6 {
     border-color: var(--primary);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+/* Founder Section */
+.founder-card {
+    max-width: 1000px;
+    margin: 2rem auto 0;
+    padding: 2.5rem;
+}
+
+.founder-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.founder-image-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.founder-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary);
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.3);
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.founder-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 32px rgba(99, 102, 241, 0.4);
+}
+
+.founder-experience-badge {
+    margin-top: 1.5rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.experience-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+}
+
+.experience-label {
+    display: block;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0.25rem;
+}
+
+.founder-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.founder-name {
+    font-size: 2.5rem;
+    margin-bottom: 0.25rem;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.founder-role {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.founder-certification {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: rgba(99, 102, 241, 0.1);
+    border-left: 3px solid var(--primary);
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.cert-icon {
+    flex-shrink: 0;
+    stroke: var(--primary);
+    animation: pulse 2s infinite;
+}
+
+.founder-bio {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.founder-bio p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.founder-global {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.global-label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.global-regions {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.region {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.linkedin-btn {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.linkedin-btn:hover {
+    background: #0077b5;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+}
+
+/* Responsive Founder Section */
+@media (max-width: 768px) {
+    .founder-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .founder-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .founder-image-wrapper {
+        justify-self: center;
+    }
+
+    .founder-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .founder-name {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .founder-role {
+        text-align: center;
+    }
+
+    .founder-bio p {
+        text-align: justify;
+    }
+
+    .global-regions {
+        justify-content: center;
+    }
+
+    .linkedin-btn {
+        align-self: center;
+    }
 }
 
 /* ==========================================================================
@@ -788,5 +1003,123 @@ h6 {
         flex-direction: column;
         gap: 1rem;
         margin-top: 2rem;
+    }
+}
+
+/* ==========================================================================
+   Footer Enhancements
+   ========================================================================== */
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.footer-section h3 {
+    margin-bottom: 0.75rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-section h4 {
+    margin-bottom: 1.25rem;
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.footer-contact {
+    margin: 1.5rem 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.contact-item svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: var(--primary);
+    margin-top: 2px;
+}
+
+.contact-item a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color var(--transition-smooth);
+}
+
+.contact-item a:hover {
+    color: var(--primary);
+}
+
+.compliance-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.compliance-badges .badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    transition: all var(--transition-smooth);
+}
+
+.compliance-badges .badge:hover {
+    border-color: var(--accent);
+    transform: translateX(4px);
+}
+
+.compliance-badges .badge svg {
+    width: 16px;
+    height: 16px;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.compliance-text {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    padding: 0.75rem;
+    background: var(--bg-card);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-sm);
+}
+
+.footer-bottom {
+    padding: 1.5rem 0;
+}
+
+.footer-bottom p {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+/* Footer Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
     }
 }
