@@ -41,12 +41,12 @@ document.querySelectorAll('.lang-toggle').forEach(toggle => {
     toggle.addEventListener('click', (e) => {
         e.stopPropagation();
         const menu = toggle.parentElement.querySelector('.lang-menu');
-        
+
         // Close all other language menus
         document.querySelectorAll('.lang-menu').forEach(m => {
             if (m !== menu) m.parentElement.classList.remove('active');
         });
-        
+
         toggle.parentElement.classList.toggle('active');
     });
 });
@@ -63,23 +63,23 @@ document.querySelectorAll('.lang-option').forEach(option => {
     option.addEventListener('click', (e) => {
         e.preventDefault();
         const lang = option.dataset.lang;
-        
+
         // Update all language toggle buttons
         document.querySelectorAll('.lang-toggle span').forEach(span => {
             span.textContent = option.textContent;
         });
-        
+
         // Close all menus
         document.querySelectorAll('.lang-switcher').forEach(switcher => {
             switcher.classList.remove('active');
         });
-        
+
         // Here you would implement the actual language switching logic
         console.log('Language switched to:', lang);
-        
+
         // Trigger language change event
-        if (typeof changeLanguage === 'function') {
-            changeLanguage(lang);
+        if (window.i18n && typeof window.i18n.setLanguage === 'function') {
+            window.i18n.setLanguage(lang);
         }
     });
 });
@@ -231,3 +231,44 @@ trackingSections.forEach(({ id }) => {
 
 // Track initial page load
 trackSectionView('hero', '/');
+
+// ==========================================================================
+// Form Handling (Google Sheets Integration - Placeholder / UI Logic)
+// ==========================================================================
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const btn = contactForm.querySelector('button[type="submit"]');
+        const originalText = btn.textContent;
+        const formStatus = document.getElementById('form-status');
+        
+        // Disable button
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+        
+        // Simulate sending (replace with actual fetch to Google Apps Script or other backend)
+        setTimeout(() => {
+            // Reset button
+            btn.disabled = false;
+            btn.textContent = 'Message Sent!';
+            
+            // Clear form
+            contactForm.reset();
+            
+            // Show success message
+            if (formStatus) {
+                formStatus.style.display = 'block';
+                formStatus.className = 'form-status success'; // Use updated CSS class
+                formStatus.textContent = 'Thank you! We will get back to you shortly.';
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    formStatus.style.display = 'none';
+                    btn.textContent = originalText;
+                }, 5000);
+            }
+        }, 1500);
+    });
+}
