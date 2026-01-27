@@ -1,29 +1,88 @@
 console.log('Value Unbound Solutions - Initializing...');
 
 // ==========================================================================
-// Theme Handling
+// Header Scroll Effects
 // ==========================================================================
-const themeToggle = document.getElementById('theme-toggle');
-const htmlEl = document.documentElement;
+const header = document.getElementById('header');
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const mobileNav = document.querySelector('.mobile-nav');
 
-// Function to set theme
-const setTheme = (theme) => {
-    htmlEl.setAttribute('data-theme', theme);
-    localStorage.setItem('vus_theme', theme);
-};
+// Add shadow on scroll
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        header.classList.add('header--scrolled');
+    } else {
+        header.classList.remove('header--scrolled');
+    }
+});
 
-// Initialize Theme
-const savedTheme = localStorage.getItem('vus_theme') || 'dark';
-setTheme(savedTheme);
-
-// Toggle Event
-if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-        const current = htmlEl.getAttribute('data-theme');
-        const newTheme = current === 'dark' ? 'light' : 'dark';
-        setTheme(newTheme);
+// ==========================================================================
+// Mobile Menu
+// ==========================================================================
+if (mobileMenuBtn && mobileNav) {
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenuBtn.classList.toggle('active');
+        mobileNav.classList.toggle('active');
     });
 }
+
+// Close mobile menu when clicking links
+document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenuBtn.classList.remove('active');
+        mobileNav.classList.remove('active');
+    });
+});
+
+// ==========================================================================
+// Language Switcher
+// ==========================================================================
+document.querySelectorAll('.lang-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const menu = toggle.parentElement.querySelector('.lang-menu');
+        
+        // Close all other language menus
+        document.querySelectorAll('.lang-menu').forEach(m => {
+            if (m !== menu) m.parentElement.classList.remove('active');
+        });
+        
+        toggle.parentElement.classList.toggle('active');
+    });
+});
+
+// Close language menus when clicking outside
+document.addEventListener('click', () => {
+    document.querySelectorAll('.lang-switcher').forEach(switcher => {
+        switcher.classList.remove('active');
+    });
+});
+
+// Handle language selection
+document.querySelectorAll('.lang-option').forEach(option => {
+    option.addEventListener('click', (e) => {
+        e.preventDefault();
+        const lang = option.dataset.lang;
+        
+        // Update all language toggle buttons
+        document.querySelectorAll('.lang-toggle span').forEach(span => {
+            span.textContent = option.textContent;
+        });
+        
+        // Close all menus
+        document.querySelectorAll('.lang-switcher').forEach(switcher => {
+            switcher.classList.remove('active');
+        });
+        
+        // Here you would implement the actual language switching logic
+        console.log('Language switched to:', lang);
+        
+        // Trigger language change event
+        if (typeof changeLanguage === 'function') {
+            changeLanguage(lang);
+        }
+    });
+});
 
 // ==========================================================================
 // Scroll Animations (IntersectionObserver)
@@ -71,8 +130,8 @@ if (mobileBtn && navMenu) {
 // ==========================================================================
 // Navigation Active State on Scroll
 // ==========================================================================
-const navSections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.nav-menu a');
+const navSections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
 
 const scrollActive = () => {
     const scrollY = window.pageYOffset;
@@ -97,7 +156,7 @@ const scrollActive = () => {
 
     navLinks.forEach(link => {
         link.classList.remove('active');
-        if (link.getAttribute('href').includes(current)) {
+        if (link.getAttribute('href') === `#${current}`) {
             link.classList.add('active');
         }
     });
