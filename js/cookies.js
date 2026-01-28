@@ -96,17 +96,19 @@ class CookieConsent {
     }
 
     loadConversionHelper() {
-        // Define the helper function globally for Google Ads tracking
+        // Define the helper function globally for form submission tracking
+        // This is called AFTER gtag is loaded, so gtag will be available
         window.gtag_report_conversion = function (url) {
             var callback = function () {
-                if (typeof url !== 'undefined') {
+                if (typeof url === 'string') {
                     window.location = url;
                 }
             };
+            // gtag is guaranteed to exist here since this is called from loadAnalytics()
             if (typeof window.gtag === 'function') {
-                window.gtag('event', 'conversion', {
-                    'send_to': 'AW-CONVERSION_ID/LABEL', // Replace with actual if you have Ads
-                    'event_callback': callback
+                window.gtag('event', 'conversion_event_submit_lead_form_1', {
+                    'event_callback': callback,
+                    'event_timeout': 2000
                 });
             }
             return false;

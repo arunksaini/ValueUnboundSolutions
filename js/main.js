@@ -233,42 +233,116 @@ trackingSections.forEach(({ id }) => {
 trackSectionView('hero', '/');
 
 // ==========================================================================
-// Form Handling (Google Sheets Integration - Placeholder / UI Logic)
+// Form Handling (Google Apps Script Integration)
 // ==========================================================================
+
+// IMPORTANT: After deploying the Google Apps Script (see google-apps-script.js),
+// replace 'YOUR_SCRIPT_URL_HERE' with your actual Web App URL
+const FORM_SUBMIT_URL = 'https://script.google.com/macros/s/AKfycbyMh8XS-sbFVvvNdX68jUP-C5gGxcBLWuj0O1KYUKk_DOQfeWLeSdIw5Xe1eCIjFJxk/exec';
+
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         const btn = contactForm.querySelector('button[type="submit"]');
         const originalText = btn.textContent;
         const formStatus = document.getElementById('form-status');
-        
-        // Disable button
+
+        // Collect form data
+        const formData = {
+            name: contactForm.querySelector('#name')?.value || '',
+            email: contactForm.querySelector('#email')?.value || '',
+            company: contactForm.querySelector('#company')?.value || '',
+            message: contactForm.querySelector('#message')?.value || '',
+            _honeypot: contactForm.querySelector('[name="_honeypot"]')?.value || ''
+        };
+
+        // Basic client-side validation
+        if (!formData.name.trim() || !formData.email.trim()) {
+            showFormStatus(formStatus, 'error', 'Please fill in all required fields.');
+            return;
+        }
+
+        // Disable button and show loading state
         btn.disabled = true;
         btn.textContent = 'Sending...';
-        
-        // Simulate sending (replace with actual fetch to Google Apps Script or other backend)
-        setTimeout(() => {
-            // Reset button
-            btn.disabled = false;
-            btn.textContent = 'Message Sent!';
-            
-            // Clear form
-            contactForm.reset();
-            
-            // Show success message
-            if (formStatus) {
-                formStatus.style.display = 'block';
-                formStatus.className = 'form-status success'; // Use updated CSS class
-                formStatus.textContent = 'Thank you! We will get back to you shortly.';
-                
-                // Hide success message after 5 seconds
-                setTimeout(() => {
-                    formStatus.style.display = 'none';
-                    btn.textContent = originalText;
-                }, 5000);
+
+        try {
+            // Check if form URL is configured
+            if (!FORM_SUBMIT_URL || FORM_SUBMIT_URL === 'YOUR_SCRIPT_URL_HERE') {
+                // Fallback for development - simulate success
+                console.warn('Form submission URL not configured. Using fallback mode.');
+                await simulateSubmission(formData);
+                handleSubmissionSuccess(btn, originalText, formStatus, contactForm);
+                return;
             }
-        }, 1500);
+
+            // Send form data to Google Apps Script
+            await fetch(FORM_SUBMIT_URL, {
+                method: 'POST',
+                mode: 'no-cors', // Google Apps Script requires no-cors
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            });
+
+            // Note: With no-cors mode, we can't read the response
+            // We assume success if no error is thrown
+            handleSubmissionSuccess(btn, originalText, formStatus, contactForm);
+
+        } catch (error) {
+            console.error('Form submission error:', error);
+            handleSubmissionError(btn, originalText, formStatus);
+        }
     });
+}
+
+// Handle successful form submission
+function handleSubmissionSuccess(btn, originalText, formStatus, form) {
+    // Update button
+    btn.disabled = false;
+    btn.textContent = 'Message Sent!';
+
+    // Clear form
+    form.reset();
+
+    // Show success message
+    showFormStatus(formStatus, 'success', 'Thank you! We will get back to you shortly.');
+
+    // Track conversion in Google Analytics
+    if (typeof window.gtag_report_conversion === 'function') {
+        window.gtag_report_conversion();
+    }
+
+    // Reset button text after 5 seconds
+    setTimeout(() => {
+        btn.textContent = originalText;
+        if (formStatus) {
+            formStatus.style.display = 'none';
+        }
+    }, 5000);
+}
+
+// Handle form submission error
+function handleSubmissionError(btn, originalText, formStatus) {
+    btn.disabled = false;
+    btn.textContent = originalText;
+    showFormStatus(formStatus, 'error', 'An error occurred. Please try again or email us directly.');
+}
+
+// Show form status message
+function showFormStatus(statusElement, type, message) {
+    if (statusElement) {
+        statusElement.style.display = 'block';
+        statusElement.className = `form-status ${type}`;
+        statusElement.textContent = message;
+    }
+}
+
+// Fallback simulation for development/testing
+async function simulateSubmission(data) {
+    console.log('Simulated form submission:', data);
+    return new Promise(resolve => setTimeout(resolve, 1000));
 }

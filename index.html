@@ -22,7 +22,7 @@
     <meta property="og:title" content="Value Unbound Solutions | Salesforce Optimization & B2B Consulting">
     <meta property="og:description"
         content="Freeing business value from unnecessary software ecosystems. Expert Salesforce optimization and outcome-focused B2B consulting.">
-    <meta property="og:image" content="https://www.valueunbound.com/assets/images/logo.png">
+    <meta property="og:image" content="assets/images/logo.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -30,7 +30,7 @@
     <meta property="twitter:title" content="Value Unbound Solutions | Salesforce Optimization & B2B Consulting">
     <meta property="twitter:description"
         content="Freeing business value from unnecessary software ecosystems. Expert Salesforce optimization and outcome-focused B2B consulting.">
-    <meta property="twitter:image" content="https://www.valueunbound.com/assets/images/logo.png">
+    <meta property="twitter:image" content="assets/images/logo.png">
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -96,30 +96,10 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="assets/images/fav.png">
 </head>
-<!-- Google tag (gtag.js) -->
-<!-- Google Analytics loaded dynamically via js/cookies.js for GDPR compliance -->
-
-<!-- Google tag (gtag.js) event - delayed navigation helper -->
-<script>
-    // Helper function to delay opening a URL until a gtag event is sent.
-    // Call it in response to an action that should navigate to a URL.
-    function gtag_report_conversion(url) {
-        var callback = function () {
-            if (typeof url === 'string') {
-                window.location = url;
-            }
-        };
-        gtag('event', 'conversion_event_submit_lead_form_1', {
-            'event_callback': callback,
-            'event_timeout': 2000,
-            // <event_parameters>
-        });
-        return false;
-    }
-</script>
-
 
 <body>
+    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics loaded dynamically via js/cookies.js for GDPR compliance -->
     <!-- Header / Navigation -->
     <header id="header" class="header">
         <div class="nav-container">
@@ -142,18 +122,18 @@
 
             <div class="nav-actions">
                 <div class="lang-switcher">
-                    <button class="lang-toggle">
+                    <button class="lang-toggle" aria-label="Select language" aria-haspopup="true" aria-expanded="false">
                         <span>🇺🇸 EN</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
+                            stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <polyline points="6,9 12,15 18,9"></polyline>
                         </svg>
                     </button>
-                    <div class="lang-menu">
-                        <a href="#" class="lang-option" data-lang="de">🇩🇪 Deutsch</a>
-                        <a href="#" class="lang-option" data-lang="fr">🇫🇷 Français</a>
-                        <a href="#" class="lang-option" data-lang="it">🇮🇹 Italiano</a>
-                        <a href="#" class="lang-option" data-lang="es">🇪🇸 Español</a>
+                    <div class="lang-menu" role="menu">
+                        <button class="lang-option" data-lang="de" role="menuitem">🇩🇪 Deutsch</button>
+                        <button class="lang-option" data-lang="fr" role="menuitem">🇫🇷 Français</button>
+                        <button class="lang-option" data-lang="it" role="menuitem">🇮🇹 Italiano</button>
+                        <button class="lang-option" data-lang="es" role="menuitem">🇪🇸 Español</button>
                     </div>
                 </div>
                 <a href="#contact" class="btn btn--primary" data-i18n="nav.get_started">Get Started</a>
@@ -179,18 +159,18 @@
 
             <div class="mobile-nav-actions">
                 <div class="lang-switcher">
-                    <button class="lang-toggle">
+                    <button class="lang-toggle" aria-label="Select language" aria-haspopup="true" aria-expanded="false">
                         <span>🇺🇸 EN</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
+                            stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <polyline points="6,9 12,15 18,9"></polyline>
                         </svg>
                     </button>
-                    <div class="lang-menu">
-                        <a href="#" class="lang-option" data-lang="de">🇩🇪 Deutsch</a>
-                        <a href="#" class="lang-option" data-lang="fr">🇫🇷 Français</a>
-                        <a href="#" class="lang-option" data-lang="it">🇮🇹 Italiano</a>
-                        <a href="#" class="lang-option" data-lang="es">🇪🇸 Español</a>
+                    <div class="lang-menu" role="menu">
+                        <button class="lang-option" data-lang="de" role="menuitem">🇩🇪 Deutsch</button>
+                        <button class="lang-option" data-lang="fr" role="menuitem">🇫🇷 Français</button>
+                        <button class="lang-option" data-lang="it" role="menuitem">🇮🇹 Italiano</button>
+                        <button class="lang-option" data-lang="es" role="menuitem">🇪🇸 Español</button>
                     </div>
                 </div>
                 <a href="#contact" class="btn btn--primary btn--block" data-i18n="nav.get_started">Get Started</a>
@@ -218,7 +198,7 @@
                         <a href="#about" class="hero-cta-secondary" data-i18n="hero.cta_secondary">
                             <span data-i18n="hero.cta_secondary_text">View Case Studies</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2">
+                                fill="none" stroke="currentColor" stroke-width="2" role="img" aria-label="Arrow right">
                                 <polyline points="9,18 15,12 9,6"></polyline>
                             </svg>
                         </a>
@@ -237,42 +217,6 @@
         </div>
     </section>
 
-    <!-- Customer Logos Section -->
-    <!--
-    <section class="logos-section">
-        <div class="container">
-            <div class="logos-title" data-i18n="logos.title">Partnered with Leading Technology Providers</div>
-            <div class="logos-container">
-                <div class="logos-track">
-                    <div class="logo-item">
-                        <img src="assets/images/logo1.png" alt="Client Partner">
-                    </div>
-                    <div class="logo-item">
-                        <img src="assets/images/logo.png" alt="Client Partner">
-                    </div>
-                    <div class="logo-item">
-                        <img src="assets/images/logo_old.png" alt="Client Partner">
-                    </div>
-                    <div class="logo-item">
-                        <div style="width: 120px; height: 40px; background: linear-gradient(45deg, #1e40af, #059669); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 14px;">CLIENT</div>
-                    </div>
-                    <div class="logo-item">
-                        <div style="width: 120px; height: 40px; background: linear-gradient(45deg, #7c3aed, #0891b2); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 14px;">PARTNER</div>
-                    </div>
-                    <div class="logo-item">
-                        <img src="assets/images/logo1.png" alt="Client Partner">
-                    </div>
-                    <div class="logo-item">
-                        <img src="assets/images/logo.png" alt="Client Partner">
-                    </div>
-                    <div class="logo-item">
-                        <img src="assets/images/logo_old.png" alt="Client Partner">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
 
     <!-- Expertise Section -->
     <section class="section expertise-section">
@@ -483,7 +427,8 @@
 
                         <div class="founder-certification">
                             <svg class="cert-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" role="img"
+                                aria-label="Certification badge">
                                 <path
                                     d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2z">
                                 </path>
@@ -519,9 +464,10 @@
                         </div>
 
                         <a href="https://www.linkedin.com/in/arun-kumar-saini-11b4474b/" target="_blank"
-                            rel="noopener noreferrer" class="btn btn-primary linkedin-btn">
+                            rel="noopener noreferrer" class="btn btn-primary linkedin-btn"
+                            aria-label="Connect on LinkedIn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
+                                fill="currentColor" aria-hidden="true">
                                 <path
                                     d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                             </svg>
@@ -595,7 +541,7 @@
                             <a href="mailto:info@valueunbound.com" class="footer-contact-item">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                    stroke-linejoin="round" role="img" aria-label="Email icon">
                                     <path
                                         d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
                                     </path>
@@ -606,7 +552,7 @@
                             <div class="footer-contact-item">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                    stroke-linejoin="round" role="img" aria-label="Location icon">
                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
@@ -657,7 +603,7 @@
                                 <div class="compliance-badge">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
+                                        stroke-linejoin="round" role="img" aria-label="Security shield icon">
                                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                                     </svg>
                                     <span data-i18n="footer.gdpr_compliant">GDPR Compliant</span>
@@ -665,19 +611,12 @@
                                 <div class="compliance-badge">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
+                                        stroke-linejoin="round" role="img" aria-label="Security lock icon">
                                         <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                                         <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                                     </svg>
                                     <span data-i18n="footer.iso_compliant">ISO 27001 Standards</span>
                                 </div>
-                            </div>
-                            <div class="footer-links">
-                                <!--
-                                <a href="#" class="footer-link" data-i18n="footer.privacy_link">Privacy Policy</a>
-                                <a href="#" class="footer-link" data-i18n="footer.terms_link">Terms of Service</a>
-                                <a href="#" class="footer-link" data-i18n="footer.imprint_link">Imprint</a>
-                                -->
                             </div>
                         </div>
                     </div>
@@ -690,13 +629,6 @@
                 <div class="footer-bottom-content">
                     <p class="footer-copyright" data-i18n="footer.copyright">© 2026 Value Unbound Solutions. All rights
                         reserved.</p>
-                    <div class="footer-legal-links">
-                        <!--
-                        <a href="#" class="footer-legal-link" data-i18n="footer.privacy_link">Privacy</a>
-                        <a href="#" class="footer-legal-link" data-i18n="footer.terms_link">Terms</a>
-                        <a href="#" class="footer-legal-link" data-i18n="footer.imprint_link">Imprint</a>
-                        -->
-                    </div>
                 </div>
             </div>
         </div>
