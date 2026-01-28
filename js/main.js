@@ -37,6 +37,32 @@ document.querySelectorAll('.mobile-nav-link').forEach(link => {
 // ==========================================================================
 // Language Switcher
 // ==========================================================================
+const languageLabels = {
+    'en': '🇺🇸 EN',
+    'de': '🇩🇪 DE',
+    'fr': '🇫🇷 FR',
+    'it': '🇮🇹 IT',
+    'es': '🇪🇸 ES'
+};
+
+// Function to update language menu visibility
+function updateLanguageMenus(currentLang) {
+    document.querySelectorAll('.lang-option').forEach(option => {
+        const lang = option.dataset.lang;
+        if (lang === currentLang) {
+            option.style.display = 'none'; // Hide current language
+        } else {
+            option.style.display = 'flex'; // Show other languages
+        }
+    });
+
+    // Update all toggle buttons to show current language
+    document.querySelectorAll('.lang-toggle span').forEach(span => {
+        span.textContent = languageLabels[currentLang] || '🇺🇸 EN';
+    });
+}
+
+// Toggle language menu
 document.querySelectorAll('.lang-toggle').forEach(toggle => {
     toggle.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -64,25 +90,33 @@ document.querySelectorAll('.lang-option').forEach(option => {
         e.preventDefault();
         const lang = option.dataset.lang;
 
-        // Update all language toggle buttons
-        document.querySelectorAll('.lang-toggle span').forEach(span => {
-            span.textContent = option.textContent;
-        });
+        // Update menu visibility for all language switchers
+        updateLanguageMenus(lang);
 
         // Close all menus
         document.querySelectorAll('.lang-switcher').forEach(switcher => {
             switcher.classList.remove('active');
         });
 
-        // Here you would implement the actual language switching logic
+        // Trigger language change in i18n
         console.log('Language switched to:', lang);
-
-        // Trigger language change event
         if (window.i18n && typeof window.i18n.setLanguage === 'function') {
             window.i18n.setLanguage(lang);
         }
     });
 });
+
+// Listen for language changes from i18n
+window.addEventListener('languageChanged', (e) => {
+    updateLanguageMenus(e.detail.lang);
+});
+
+// Initialize language menu on page load
+// Wait a bit for i18n to initialize
+setTimeout(() => {
+    const currentLang = window.i18n?.currentLang || 'en';
+    updateLanguageMenus(currentLang);
+}, 100);
 
 // ==========================================================================
 // Scroll Animations (IntersectionObserver)

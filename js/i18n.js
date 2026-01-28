@@ -66,6 +66,9 @@ class I18n {
         // Update switcher if changed programmatically
         const switcher = document.getElementById('lang-switcher');
         if (switcher && switcher.value !== lang) switcher.value = lang;
+
+        // Trigger custom event for language menu update
+        window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
     }
 
     async loadTranslations(lang) {

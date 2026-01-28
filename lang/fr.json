@@ -14,10 +14,15 @@
         "get_started": "Commencer"
     },
     "hero": {
+        "label": "Spécialistes de l'optimisation Salesforce",
         "headline": "Libérer la valeur commerciale des logiciels inutiles",
         "subheadline": "Nous aidons les entreprises à réduire les coûts Salesforce, à éliminer la complexité et à augmenter le retour sur investissement grâce à l'automatisation intelligente et à l'IA, sans dépendance vis-à-vis des fournisseurs.",
         "cta_primary": "Découvrir comment",
-        "cta_secondary": "Notre histoire"
+        "cta_secondary": "Notre histoire",
+        "cta_secondary_text": "Découvrez comment nous travaillons"
+    },
+    "logos": {
+        "title": "Partenaire de fournisseurs de technologie leaders"
     },
     "about": {
         "title": "Pourquoi Value Unbound Solutions ?",
@@ -44,8 +49,18 @@
         "point_4_desc": "Approche neutre vis-à-vis des plates-formes axée sur vos résultats",
         "motto": "Valeur mesurée, pas logiciel groupé."
     },
+    "expertise": {
+        "title": "Pourquoi notre approche fonctionne",
+        "expertise_title": "15+ années d'expérience approfondie en entreprise",
+        "expertise_desc": "Spécialisé dans l'architecture et l'optimisation Salesforce dans les services financiers, la fabrication et les secteurs technologiques",
+        "process_title": "Méthodologie systématique en 5 étapes",
+        "process_desc": "Cadre éprouvé pour identifier et éliminer les inefficacités Salesforce tout en maintenant la continuité des activités",
+        "focus_title": "Perspective neutre vis-à-vis des fournisseurs",
+        "focus_desc": "Nous travaillons pour votre succès, pas pour les quotas Salesforce. Recommandations impartiales qui servent vos objectifs commerciaux"
+    },
     "services": {
         "title": "Ce que nous faisons",
+        "subtitle": "Solutions dirigées par des experts conçues spécifiquement pour les PME allemandes et les entreprises internationales",
         "service_1_title": "Optimisation Salesforce",
         "service_1_desc": "Auditer, rationaliser et réduire les coûts de votre implémentation Salesforce existante",
         "service_2_title": "Automatisation des processus",
@@ -101,7 +116,22 @@
         "compliance_title": "Conformité & Confidentialité",
         "gdpr_compliant": "Conforme RGPD",
         "iso_compliant": "Normes ISO 27001",
-        "privacy_statement": "Nous nous engageons à protéger vos données et votre vie privée conformément aux réglementations allemandes et européennes sur la protection des données (RGPD)."
+        "privacy_statement": "Nous nous engageons à protéger vos données et votre vie privée conformément aux réglementations allemandes et européennes sur la protection des données (RGPD).",
+        "services_title": "Services",
+        "service_optimization": "Optimisation Salesforce",
+        "service_automation": "Automatisation des processus",
+        "service_integration": "Intégration de systèmes",
+        "service_advisory": "Conseil stratégique",
+        "service_custom": "Solutions personnalisées",
+        "company_title": "Entreprise",
+        "about_link": "À propos",
+        "vision_link": "Notre vision",
+        "founder_link": "Rencontrer le fondateur",
+        "contact_link": "Contact",
+        "legal_title": "Conformité & Juridique",
+        "privacy_link": "Politique de confidentialité",
+        "terms_link": "Conditions d'utilisation",
+        "imprint_link": "Mentions légales"
     },
     "cookies": {
         "title": "Paramètres des cookies",
