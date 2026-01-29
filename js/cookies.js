@@ -106,7 +106,7 @@ class CookieConsent {
             };
             // gtag is guaranteed to exist here since this is called from loadAnalytics()
             if (typeof window.gtag === 'function') {
-                window.gtag('event', 'conversion_event_submit_lead_form_1', {
+                window.gtag('event', 'conversion_event_submit_lead_form_2', {
                     'event_callback': callback,
                     'event_timeout': 2000
                 });

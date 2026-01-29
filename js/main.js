@@ -276,10 +276,21 @@ const FORM_SUBMIT_URL = 'https://script.google.com/macros/s/AKfycbyMh8XS-sbFVvvN
 
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
+    // Google Ads Conversion Tracking on Click
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    if (submitBtn) {
+        submitBtn.addEventListener('click', () => {
+            if (typeof window.gtag_report_conversion === 'function') {
+                window.gtag_report_conversion();
+            }
+        });
+    }
+
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
         const btn = contactForm.querySelector('button[type="submit"]');
+
         const originalText = btn.textContent;
         const formStatus = document.getElementById('form-status');
 
@@ -346,9 +357,11 @@ function handleSubmissionSuccess(btn, originalText, formStatus, form) {
     showFormStatus(formStatus, 'success', 'Thank you! We will get back to you shortly.');
 
     // Track conversion in Google Analytics
-    if (typeof window.gtag_report_conversion === 'function') {
-        window.gtag_report_conversion();
-    }
+    // Track conversion in Google Analytics
+    // MOVED TO BUTTON CLICK AS PER REQUEST
+    // if (typeof window.gtag_report_conversion === 'function') {
+    //     window.gtag_report_conversion();
+    // }
 
     // Reset button text after 5 seconds
     setTimeout(() => {
