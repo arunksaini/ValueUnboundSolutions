@@ -10,6 +10,8 @@
         "services": "Dienstleistungen",
         "vision": "Vision",
         "founder": "Gründer",
+        "blog": "Blog",
+        "products": "Produkte",
         "contact": "Kontakt",
         "get_started": "Loslegen"
     },
@@ -128,10 +130,32 @@
         "vision_link": "Unsere Vision",
         "founder_link": "Den Gründer treffen",
         "contact_link": "Kontakt",
+        "blog_link": "Blog",
+        "products_link": "Produkte",
         "legal_title": "Compliance & Rechtliches",
         "privacy_link": "Datenschutzerklärung",
         "terms_link": "Nutzungsbedingungen",
         "imprint_link": "Impressum"
+    },
+    "blog": {
+        "page_title": "Einblicke & Expertise",
+        "page_subtitle": "Expertenwissen zu Salesforce-Optimierung, KI-Integration und modernen CRM-Strategien",
+        "read_more": "Artikel lesen",
+        "back_to_blog": "Zurück zum Blog",
+        "share": "Diesen Artikel teilen",
+        "related": "Verwandte Artikel",
+        "min_read": "Min. Lesezeit"
+    },
+    "products": {
+        "page_title": "Unsere Produkte",
+        "page_subtitle": "KI-gesteuerte Tools, die wir entwickeln, um das Salesforce-Management zu transformieren",
+        "coming_soon": "Demnächst",
+        "get_notified": "Benachrichtigt werden",
+        "beta": "Beta",
+        "available_now": "Jetzt verfügbar",
+        "request_demo": "Demo anfordern",
+        "cta_title": "Interesse an unseren Produkten?",
+        "cta_text": "Melden Sie sich an, um benachrichtigt zu werden, wenn wir starten, oder kontaktieren Sie uns, um zu besprechen, wie unsere Tools Ihrem Unternehmen helfen können."
     },
     "cookies": {
         "title": "Cookie-Einstellungen",

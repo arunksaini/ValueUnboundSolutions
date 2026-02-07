@@ -73,7 +73,7 @@ class I18n {
 
     async loadTranslations(lang) {
         try {
-            const response = await fetch(`lang/${lang}.json`);
+            const response = await fetch(`/lang/${lang}.json`);
             if (!response.ok) throw new Error(`Could not load ${lang}.json`);
             this.translations = await response.json();
             document.documentElement.lang = lang;

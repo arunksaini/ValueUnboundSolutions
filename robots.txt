@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.valueunbound.com/sitemap.xml
+
+# Block template file from indexing
+Disallow: /blog/_template.html

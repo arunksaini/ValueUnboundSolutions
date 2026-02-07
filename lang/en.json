@@ -10,6 +10,8 @@
         "services": "Services",
         "vision": "Vision",
         "founder": "Founder",
+        "blog": "Blog",
+        "products": "Products",
         "contact": "Contact",
         "get_started": "Get Started"
     },
@@ -128,10 +130,32 @@
         "vision_link": "Our Vision",
         "founder_link": "Meet the Founder",
         "contact_link": "Contact",
+        "blog_link": "Blog",
+        "products_link": "Products",
         "legal_title": "Compliance & Legal",
         "privacy_link": "Privacy Policy",
         "terms_link": "Terms of Service",
         "imprint_link": "Imprint"
+    },
+    "blog": {
+        "page_title": "Insights & Expertise",
+        "page_subtitle": "Expert perspectives on Salesforce optimization, AI integration, and modern CRM strategies",
+        "read_more": "Read Article",
+        "back_to_blog": "Back to Blog",
+        "share": "Share this article",
+        "related": "Related Articles",
+        "min_read": "min read"
+    },
+    "products": {
+        "page_title": "Our Products",
+        "page_subtitle": "AI-powered tools we're building to transform Salesforce management",
+        "coming_soon": "Coming Soon",
+        "get_notified": "Get Notified",
+        "beta": "Beta",
+        "available_now": "Available Now",
+        "request_demo": "Request Demo",
+        "cta_title": "Interested in Our Products?",
+        "cta_text": "Sign up to be notified when we launch, or reach out to discuss how our tools can help your business."
     },
     "cookies": {
         "title": "Cookie Settings",

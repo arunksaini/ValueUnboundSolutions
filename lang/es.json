@@ -10,6 +10,8 @@
         "services": "Servicios",
         "vision": "Visión",
         "founder": "Fundador",
+        "blog": "Blog",
+        "products": "Productos",
         "contact": "Contacto",
         "get_started": "Empezar"
     },
@@ -128,10 +130,32 @@
         "vision_link": "Nuestra visión",
         "founder_link": "Conoce al fundador",
         "contact_link": "Contacto",
+        "blog_link": "Blog",
+        "products_link": "Productos",
         "legal_title": "Cumplimiento y Legal",
         "privacy_link": "Política de privacidad",
         "terms_link": "Términos de servicio",
         "imprint_link": "Aviso legal"
+    },
+    "blog": {
+        "page_title": "Perspectivas & Experiencia",
+        "page_subtitle": "Perspectivas expertas sobre optimización de Salesforce, integración de IA y estrategias CRM modernas",
+        "read_more": "Leer artículo",
+        "back_to_blog": "Volver al Blog",
+        "share": "Compartir este artículo",
+        "related": "Artículos relacionados",
+        "min_read": "min de lectura"
+    },
+    "products": {
+        "page_title": "Nuestros Productos",
+        "page_subtitle": "Herramientas impulsadas por IA que estamos construyendo para transformar la gestión de Salesforce",
+        "coming_soon": "Próximamente",
+        "get_notified": "Recibir notificación",
+        "beta": "Beta",
+        "available_now": "Disponible ahora",
+        "request_demo": "Solicitar demo",
+        "cta_title": "¿Interesado en nuestros productos?",
+        "cta_text": "Regístrese para ser notificado cuando lancemos, o contáctenos para discutir cómo nuestras herramientas pueden ayudar a su negocio."
     },
     "cookies": {
         "title": "Configuración de cookies",
