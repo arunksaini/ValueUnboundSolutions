@@ -9,19 +9,22 @@
     ============================================================
     BLOG POST SETUP CHECKLIST:
     ============================================================
-    1.  Replace ARTICLE_TITLE with your article title (used 6 times)
+    1.  Replace ARTICLE_TITLE with your article title (used 7 times)
     2.  Replace ARTICLE_DESCRIPTION with a 150-160 character description (used 4 times)
-    3.  Replace ARTICLE_SLUG with your filename without .html (used 4 times)
+    3.  Replace ARTICLE_SLUG with your filename without .html (used 5 times)
     4.  Replace ARTICLE_IMAGE with your image filename, e.g. my-article.jpg (used 4 times)
     5.  Replace PUBLISH_DATE with format: 2026-MM-DD (used 3 times)
     6.  Replace PUBLISH_DATE_DISPLAY with human format: Month DD, 2026 (used 1 time)
     7.  Replace CATEGORY with one of: Salesforce | AI | CRM | Strategy | Automation (used 2 times)
     8.  Replace READING_TIME with estimated minutes to read (used 1 time)
-    9.  Write your article content between the marked comment blocks
-    10. Update the tags at the bottom of the article
-    11. Add a card entry in /blog/index.html (newest articles go at the top)
-    12. Add a <url> entry in /sitemap.xml
-    13. Save your featured image to /assets/images/blog/ARTICLE_IMAGE (800x450px, 16:9)
+    9.  Replace WORD_COUNT with the article's word count as an integer (used 1 time)
+    10. Replace KEYWORD_1, KEYWORD_2, KEYWORD_3 with 3-5 SEO keywords (used 1 time)
+    11. Write your article content between the marked comment blocks
+    12. Update the tags at the bottom of the article
+    13. Add a card entry in /blog/index.html (newest articles go at the top)
+    14. Add a <url> entry in /sitemap.xml with priority 0.8, changefreq monthly
+    15. Save your featured image to /assets/images/blog/ARTICLE_IMAGE (800x450px, 16:9)
+    16. (Optional) Add FAQPage JSON-LD if article has Q&A or step-by-step format
     ============================================================
     -->
 
@@ -46,6 +49,7 @@
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.valueunbound.com/blog/ARTICLE_SLUG.html">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,10 +75,16 @@
         "image": "https://www.valueunbound.com/assets/images/blog/ARTICLE_IMAGE",
         "datePublished": "PUBLISH_DATE",
         "dateModified": "PUBLISH_DATE",
+        "wordCount": WORD_COUNT,
+        "articleSection": "CATEGORY",
+        "keywords": ["KEYWORD_1", "KEYWORD_2", "KEYWORD_3"],
+        "isAccessibleForFree": true,
+        "inLanguage": "en",
         "author": {
             "@type": "Person",
             "name": "Arun Kumar Saini",
-            "url": "https://www.linkedin.com/in/arun-kumar-saini-11b4474b/"
+            "url": "https://www.linkedin.com/in/arun-kumar-saini-11b4474b/",
+            "jobTitle": "Founder & Lead Solutions Architect"
         },
         "publisher": {
             "@type": "Organization",
@@ -88,6 +98,33 @@
             "@type": "WebPage",
             "@id": "https://www.valueunbound.com/blog/ARTICLE_SLUG.html"
         }
+    }
+    </script>
+
+    <!-- Breadcrumb Schema (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.valueunbound.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://www.valueunbound.com/blog/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "ARTICLE_TITLE"
+            }
+        ]
     }
     </script>
 </head>

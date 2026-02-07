@@ -10,6 +10,7 @@
         "services": "Services",
         "vision": "Vision",
         "founder": "Founder",
+        "company": "Company",
         "blog": "Blog",
         "products": "Products",
         "contact": "Contact",
@@ -162,5 +163,21 @@
         "text": "We use cookies to analyze traffic and improve your experience. Do you accept?",
         "accept": "Accept",
         "decline": "Decline"
+    },
+    "imprint": {
+        "title": "Legal Notice",
+        "legal_basis": "Information pursuant to § 5 Digital Services Act (DDG)",
+        "contact_label": "Contact:",
+        "phone_label": "Phone:",
+        "email_label": "Email:",
+        "website_label": "Website:",
+        "vat_label": "VAT Identification Number:",
+        "vat_status": "applied for",
+        "legal_form_label": "Legal form:",
+        "legal_form_value": "Sole proprietorship",
+        "responsible": "Responsible for content pursuant to § 18 (2) Interstate Media Treaty (MStV):",
+        "dispute_heading": "Dispute Resolution:",
+        "odr_text": "The EU Commission provides a platform for online dispute resolution:",
+        "dispute_text": "Consumer dispute resolution procedures offer the possibility of resolving disputes with a consumer arbitration board. However, we are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."
     }
 }

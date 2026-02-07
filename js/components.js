@@ -28,12 +28,23 @@
 
             <nav class="nav-menu">
                 <a href="/" class="nav-link" data-i18n="nav.home">Home</a>
-                <a href="/#about" class="nav-link" data-i18n="nav.about">About</a>
+                <div class="nav-dropdown">
+                    <div class="nav-dropdown-toggle nav-link">
+                        <span data-i18n="nav.company">Company</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="nav-dropdown-menu">
+                        <a href="/#about" class="nav-dropdown-item" data-i18n="nav.about">About</a>
+                        <a href="/#vision" class="nav-dropdown-item" data-i18n="nav.vision">Vision</a>
+                        <a href="/#founder" class="nav-dropdown-item" data-i18n="nav.founder">Founder</a>
+                    </div>
+                </div>
                 <a href="/#services" class="nav-link" data-i18n="nav.services">Services</a>
-                <a href="/#vision" class="nav-link" data-i18n="nav.vision">Vision</a>
-                <a href="/#founder" class="nav-link" data-i18n="nav.founder">Founder</a>
-                <a href="/blog/" class="nav-link" data-i18n="nav.blog">Blog</a>
                 <a href="/products/" class="nav-link" data-i18n="nav.products">Products</a>
+                <a href="/blog/" class="nav-link" data-i18n="nav.blog">Blog</a>
                 <a href="/#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
             </nav>
 
@@ -69,12 +80,23 @@
     <div class="mobile-nav">
         <div class="mobile-nav-content">
             <a href="/" class="mobile-nav-link" data-i18n="nav.home">Home</a>
-            <a href="/#about" class="mobile-nav-link" data-i18n="nav.about">About</a>
+            <div class="mobile-nav-group">
+                <div class="mobile-nav-toggle">
+                    <span data-i18n="nav.company">Company</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="mobile-nav-sub">
+                    <a href="/#about" class="mobile-nav-link" data-i18n="nav.about">About</a>
+                    <a href="/#vision" class="mobile-nav-link" data-i18n="nav.vision">Vision</a>
+                    <a href="/#founder" class="mobile-nav-link" data-i18n="nav.founder">Founder</a>
+                </div>
+            </div>
             <a href="/#services" class="mobile-nav-link" data-i18n="nav.services">Services</a>
-            <a href="/#vision" class="mobile-nav-link" data-i18n="nav.vision">Vision</a>
-            <a href="/#founder" class="mobile-nav-link" data-i18n="nav.founder">Founder</a>
-            <a href="/blog/" class="mobile-nav-link" data-i18n="nav.blog">Blog</a>
             <a href="/products/" class="mobile-nav-link" data-i18n="nav.products">Products</a>
+            <a href="/blog/" class="mobile-nav-link" data-i18n="nav.blog">Blog</a>
             <a href="/#contact" class="mobile-nav-link" data-i18n="nav.contact">Contact</a>
 
             <div class="mobile-nav-actions">
@@ -192,6 +214,10 @@
                                     <span data-i18n="footer.iso_compliant">ISO 27001 Standards</span>
                                 </div>
                             </div>
+                            <div class="footer-links" style="margin-top: var(--space-4);">
+                                <a href="#" class="footer-link" id="impressum-link"
+                                    data-i18n="footer.imprint_link">Impressum</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -201,6 +227,11 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="footer-bottom-content">
+                    <p class="footer-disclaimer"
+                        style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: var(--space-3); text-align: center;">
+                        Value Unbound Solutions is an independent advisory firm and is not affiliated with, endorsed by,
+                        or partnered with Salesforce or any other software vendor.
+                    </p>
                     <p class="footer-copyright" data-i18n="footer.copyright">\u00a9 2026 Value Unbound Solutions. All rights reserved.</p>
                 </div>
             </div>
@@ -221,6 +252,78 @@
             <div class="cookie-actions">
                 <button id="cookie-decline" class="btn btn-secondary btn-sm" data-i18n="cookies.decline">Decline</button>
                 <button id="cookie-accept" class="btn btn-primary btn-sm" data-i18n="cookies.accept">Accept</button>
+            </div>
+        </div>
+    </div>`;
+    }
+
+    function getImpressumModalHTML() {
+        return `
+    <div id="impressum-modal" class="modal" style="display: none;">
+        <div class="modal-overlay" id="impressum-modal-overlay"></div>
+        <div class="modal-content" style="max-width: 600px; max-height: 80vh; overflow-y: auto;">
+            <button class="modal-close" id="impressum-modal-close" aria-label="Close">\u00d7</button>
+            <h2 style="margin-bottom: var(--space-6);" data-i18n="imprint.title">Impressum</h2>
+
+            <div style="line-height: 1.8; color: var(--text-primary);">
+                <p style="font-weight: var(--font-weight-semibold); margin-bottom: var(--space-4);"
+                    data-i18n="imprint.legal_basis">
+                    Angaben gem\u00e4\u00df \u00a7 5 Digitale-Dienste-Gesetz (DDG)
+                </p>
+
+                <p style="margin-bottom: var(--space-4);">
+                    Value Unbound Solutions - Arun Kumar Saini<br>
+                    Im Geh\u00f6lz 31, Blankenfelde-Mahlow<br>
+                    15827 Brandenburg
+                </p>
+
+                <p style="font-weight: var(--font-weight-semibold); margin-top: var(--space-6); margin-bottom: var(--space-2);"
+                    data-i18n="imprint.contact_label">
+                    Kontakt:
+                </p>
+                <p style="margin-bottom: var(--space-4);">
+                    <span data-i18n="imprint.phone_label">Telefon:</span> +49 263 7469145<br>
+                    <span data-i18n="imprint.email_label">E-Mail:</span> <a href="mailto:info@valueunbound.com"
+                        style="color: var(--color-primary);">info@valueunbound.com</a><br>
+                    <span data-i18n="imprint.website_label">Website:</span> <a href="https://www.valueunbound.com"
+                        style="color: var(--color-primary);">www.valueunbound.com</a>
+                </p>
+
+                <p style="margin-bottom: var(--space-4);">
+                    <strong data-i18n="imprint.vat_label">Umsatzsteuer-Identifikationsnummer:</strong>
+                    <span data-i18n="imprint.vat_status">beantragt</span>
+                </p>
+
+                <p style="margin-bottom: var(--space-4);">
+                    <strong data-i18n="imprint.legal_form_label">Rechtsform:</strong>
+                    <span data-i18n="imprint.legal_form_value">Einzelunternehmen</span>
+                </p>
+
+                <p style="font-weight: var(--font-weight-semibold); margin-top: var(--space-6); margin-bottom: var(--space-2);"
+                    data-i18n="imprint.responsible">
+                    Verantwortlich f\u00fcr den Inhalt nach \u00a7 18 Abs. 2 Medienstaatsvertrag (MStV):
+                </p>
+                <p style="margin-bottom: var(--space-4);">
+                    Arun Kumar Saini<br>
+                    Im Geh\u00f6lz 31, Blankenfelde-Mahlow<br>
+                    15827 Brandenburg
+                </p>
+
+                <p style="font-weight: var(--font-weight-semibold); margin-top: var(--space-6); margin-bottom: var(--space-2);"
+                    data-i18n="imprint.dispute_heading">
+                    Streitschlichtung:
+                </p>
+                <p style="margin-bottom: var(--space-2);">
+                    <span data-i18n="imprint.odr_text">Die EU-Kommission stellt eine Plattform zur
+                        Online-Streitbeilegung bereit:</span>
+                    <a href="https://consumer-redress.ec.europa.eu/index_en" target="_blank" rel="noopener noreferrer"
+                        style="color: var(--color-primary);">https://consumer-redress.ec.europa.eu</a>
+                </p>
+                <p data-i18n="imprint.dispute_text">
+                    Zum Verbraucherschlichtungsverfahren geh\u00f6rt die M\u00f6glichkeit, Streitigkeiten mit einer
+                    Verbraucherstreitbeilegungsstelle zu kl\u00e4ren. Wir sind jedoch weder verpflichtet noch bereit,
+                    an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                </p>
             </div>
         </div>
     </div>`;
@@ -247,6 +350,14 @@
     if (headerEl) headerEl.innerHTML = getHeaderHTML();
     if (footerEl) footerEl.innerHTML = getFooterHTML();
     if (cookieEl) cookieEl.innerHTML = getCookieBannerHTML();
+
+    // Inject Impressum modal into body (needed for the footer link)
+    if (footerEl) {
+        var modalDiv = document.createElement('div');
+        modalDiv.id = 'site-impressum-modal';
+        modalDiv.innerHTML = getImpressumModalHTML();
+        document.body.appendChild(modalDiv);
+    }
 
     setActiveNavLink();
 })();

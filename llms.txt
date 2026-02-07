@@ -1,0 +1,34 @@
+# Value Unbound Solutions
+
+> Expert Salesforce cost optimization and CRM consulting for German SMEs and international businesses. Based in Berlin, Germany.
+
+## About
+
+Value Unbound Solutions is an independent advisory firm that helps mid-size companies escape the Salesforce complexity trap. We reduce CRM license costs by 30-50% through systematic audits, license rightsizing, and feature rationalization. Founded by Arun Kumar Saini, a Salesforce Certified Application Architect with 15+ years of enterprise experience.
+
+## Services
+
+- Salesforce Cost Optimization & License Audit
+- Process Automation & AI Integration
+- System Integration (vendor-neutral)
+- Strategic CRM Advisory
+- Custom CPQ Development (Salesforce-native)
+
+## Products
+
+- [Custom CPQ Builder](https://www.valueunbound.com/products/) - Available now. Salesforce-native CPQ with product catalog, attribute pricing, quote generation.
+- [License Optimizer](https://www.valueunbound.com/products/) - Coming soon. AI-powered Salesforce license usage analysis.
+- [Integration Hub](https://www.valueunbound.com/products/) - Coming soon. Lightweight middleware for Salesforce integrations.
+- [Process Automator](https://www.valueunbound.com/products/) - Coming soon. Intelligent workflow automation.
+- [CRM Health Monitor](https://www.valueunbound.com/products/) - Coming soon. Continuous Salesforce monitoring dashboard.
+
+## Blog
+
+- [The Salesforce Cost Trap: Why German SMEs Overpay by 30-50%](https://www.valueunbound.com/blog/salesforce-cost-trap.html)
+- [Stop Overpaying for Salesforce: A Practical Guide for CFOs](https://www.valueunbound.com/blog/stop-overpaying-salesforce-cfo-guide.html)
+
+## Contact
+
+- Website: https://www.valueunbound.com
+- Email: info@valueunbound.com
+- Location: Berlin, Germany

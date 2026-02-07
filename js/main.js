@@ -153,11 +153,25 @@ if (mobileBtn && navMenu) {
         mobileBtn.classList.toggle('active'); // CSS for this animation?
     });
 
-    // Close menu when clicking a link
+    // Close menu when clicking a link (but NOT when clicking the toggle for a sub-menu)
     navMenu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('open');
+            mobileNav.classList.remove('active');
+            mobileMenuBtn.classList.remove('active');
         });
+    });
+
+    // Mobile Navigation Group Toggles
+    const mobileNavGroups = document.querySelectorAll('.mobile-nav-group');
+    mobileNavGroups.forEach(group => {
+        const toggle = group.querySelector('.mobile-nav-toggle');
+        if (toggle) {
+            toggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                group.classList.toggle('active');
+            });
+        }
     });
 }
 
@@ -393,3 +407,45 @@ async function simulateSubmission(data) {
     console.log('Simulated form submission:', data);
     return new Promise(resolve => setTimeout(resolve, 1000));
 }
+
+// ==========================================================================
+// Impressum Modal
+// ==========================================================================
+const impressumLink = document.getElementById('impressum-link');
+const impressumModal = document.getElementById('impressum-modal');
+const impressumModalClose = document.getElementById('impressum-modal-close');
+const impressumModalOverlay = document.getElementById('impressum-modal-overlay');
+
+// Open modal
+if (impressumLink && impressumModal) {
+    impressumLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        impressumModal.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    });
+}
+
+// Close modal functions
+function closeImpressumModal() {
+    if (impressumModal) {
+        impressumModal.style.display = 'none';
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+}
+
+// Close button
+if (impressumModalClose) {
+    impressumModalClose.addEventListener('click', closeImpressumModal);
+}
+
+// Overlay click
+if (impressumModalOverlay) {
+    impressumModalOverlay.addEventListener('click', closeImpressumModal);
+}
+
+// ESC key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && impressumModal && impressumModal.style.display === 'flex') {
+        closeImpressumModal();
+    }
+});

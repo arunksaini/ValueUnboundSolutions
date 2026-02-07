@@ -10,6 +10,7 @@
         "services": "Services",
         "vision": "Vision",
         "founder": "Fondateur",
+        "company": "Entreprise",
         "blog": "Blog",
         "products": "Produits",
         "contact": "Contact",
@@ -162,5 +163,21 @@
         "text": "Nous utilisons des cookies pour analyser le trafic et améliorer votre expérience. Acceptez-vous ?",
         "accept": "Accepter",
         "decline": "Refuser"
+    },
+    "imprint": {
+        "title": "Mentions légales",
+        "legal_basis": "Informations conformément au § 5 de la loi sur les services numériques (DDG)",
+        "contact_label": "Contact :",
+        "phone_label": "Téléphone :",
+        "email_label": "E-mail :",
+        "website_label": "Site web :",
+        "vat_label": "Numéro d'identification TVA :",
+        "vat_status": "en cours de demande",
+        "legal_form_label": "Forme juridique :",
+        "legal_form_value": "Entreprise individuelle",
+        "responsible": "Responsable du contenu conformément au § 18 al. 2 du Traité interétatique sur les médias (MStV) :",
+        "dispute_heading": "Règlement des litiges :",
+        "odr_text": "La Commission européenne met à disposition une plateforme de règlement en ligne des litiges :",
+        "dispute_text": "La procédure de règlement des litiges de consommation offre la possibilité de résoudre les litiges avec un organisme de médiation des consommateurs. Cependant, nous ne sommes ni tenus ni disposés à participer à une procédure de règlement des litiges devant un organisme de médiation des consommateurs."
     }
 }

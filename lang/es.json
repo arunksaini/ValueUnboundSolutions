@@ -10,6 +10,7 @@
         "services": "Servicios",
         "vision": "Visión",
         "founder": "Fundador",
+        "company": "Empresa",
         "blog": "Blog",
         "products": "Productos",
         "contact": "Contacto",
@@ -43,13 +44,11 @@
         "main_statement": "Ayudar a las empresas a recuperar el control sobre sus sistemas, reducir costos innecesarios y aumentar el ROI a través de decisiones tecnológicas intencionales.",
         "point_1_title": "Reducir el costo y la complejidad innecesarios de Salesforce",
         "point_1_desc": "Auditamos y optimizamos su entorno Salesforce, recomendando ajustes cuando las funciones pueden no apoyar completamente sus objetivos comerciales",
-        ,
         "point_2_title": "Recuperar el control sobre sistemas y procesos",
         "point_2_desc": "Su lógica de negocio debe trabajar para usted, no para el proveedor",
         "point_3_title": "Aumentar el ROI a través de la automatización inteligente, la integración y la IA",
         "point_3_desc": "Automatizamos lo importante e integramos de manera inteligente",
         "point_4_title": "Elegir herramientas intencionalmente – sin ofertas agrupadas",
-        ,
         "point_4_desc": "Enfoque neutral de plataforma centrado en sus resultados",
         "motto": "Valor medido, no software empaquetado."
     },
@@ -80,7 +79,6 @@
         "title": "¿Por qué elegirnos?",
         "no_lock_in_title": "Sin bloqueo de proveedor",
         "no_lock_in_desc": "Construimos para su éxito a largo plazo con un enfoque en resultados comerciales medibles",
-        ,
         "outcome_focused_title": "Centrado en resultados",
         "outcome_focused_desc": "Compartimos el valor creado, no las horas facturadas",
         "platform_neutral_title": "Neutralidad de plataforma",
@@ -165,5 +163,21 @@
         "text": "Utilizamos cookies para analizar el tráfico y mejorar su experiencia. ¿Acepta?",
         "accept": "Aceptar",
         "decline": "Rechazar"
+    },
+    "imprint": {
+        "title": "Aviso legal",
+        "legal_basis": "Información conforme al § 5 de la Ley de Servicios Digitales (DDG)",
+        "contact_label": "Contacto:",
+        "phone_label": "Teléfono:",
+        "email_label": "Correo electrónico:",
+        "website_label": "Sitio web:",
+        "vat_label": "Número de identificación fiscal:",
+        "vat_status": "solicitado",
+        "legal_form_label": "Forma jurídica:",
+        "legal_form_value": "Empresa unipersonal",
+        "responsible": "Responsable del contenido conforme al § 18 apartado 2 del Tratado Interestatal de Medios (MStV):",
+        "dispute_heading": "Resolución de disputas:",
+        "odr_text": "La Comisión Europea pone a disposición una plataforma para la resolución de disputas en línea:",
+        "dispute_text": "El procedimiento de resolución de disputas de consumidores ofrece la posibilidad de resolver disputas con un organismo de arbitraje de consumidores. Sin embargo, no estamos obligados ni dispuestos a participar en un procedimiento de resolución de disputas ante un organismo de arbitraje de consumidores."
     }
 }

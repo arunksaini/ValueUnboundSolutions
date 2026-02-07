@@ -10,6 +10,7 @@
         "services": "Dienstleistungen",
         "vision": "Vision",
         "founder": "Gründer",
+        "company": "Unternehmen",
         "blog": "Blog",
         "products": "Produkte",
         "contact": "Kontakt",
@@ -162,5 +163,21 @@
         "text": "Wir verwenden Cookies, um den Datenverkehr zu analysieren und Ihre Erfahrung zu verbessern. Akzeptieren Sie?",
         "accept": "Akzeptieren",
         "decline": "Ablehnen"
+    },
+    "imprint": {
+        "title": "Impressum",
+        "legal_basis": "Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG)",
+        "contact_label": "Kontakt:",
+        "phone_label": "Telefon:",
+        "email_label": "E-Mail:",
+        "website_label": "Website:",
+        "vat_label": "Umsatzsteuer-Identifikationsnummer:",
+        "vat_status": "beantragt",
+        "legal_form_label": "Rechtsform:",
+        "legal_form_value": "Einzelunternehmen",
+        "responsible": "Verantwortlich für den Inhalt nach § 18 Abs. 2 Medienstaatsvertrag (MStV):",
+        "dispute_heading": "Streitschlichtung:",
+        "odr_text": "Die EU-Kommission stellt eine Plattform zur Online-Streitbeilegung bereit:",
+        "dispute_text": "Zum Verbraucherschlichtungsverfahren gehört die Möglichkeit, Streitigkeiten mit einer Verbraucherstreitbeilegungsstelle zu klären. Wir sind jedoch weder verpflichtet noch bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
     }
 }

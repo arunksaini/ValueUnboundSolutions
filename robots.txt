@@ -1,7 +1,28 @@
 User-agent: *
 Allow: /
+Disallow: /blog/_template.html
+
+# AI Crawlers - explicitly allowed
+User-agent: GPTBot
+Allow: /
+Disallow: /blog/_template.html
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Disallow: /
 
 Sitemap: https://www.valueunbound.com/sitemap.xml
-
-# Block template file from indexing
-Disallow: /blog/_template.html
