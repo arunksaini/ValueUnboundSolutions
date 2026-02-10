@@ -8,11 +8,11 @@ Value Unbound Solutions is an independent advisory firm that helps mid-size comp
 
 ## Services
 
-- Salesforce Cost Optimization & License Audit
-- Process Automation & AI Integration
-- System Integration (vendor-neutral)
-- Strategic CRM Advisory
-- Custom CPQ Development (Salesforce-native)
+- **Salesforce Cost Optimization & License Audit** - Reduce annual Salesforce costs by 30-50% through systematic usage analysis and license rightsizing
+- **Process Automation & AI Integration** - Eliminate manual workflows with intelligent automation
+- **System Integration** - Vendor-neutral integration services without lock-in
+- **Strategic CRM Advisory** - Technology decisions based on business outcomes, not vendor roadmaps
+- **Custom CPQ Development** - Salesforce-native configure-price-quote solutions
 
 ## Products
 
@@ -22,13 +22,63 @@ Value Unbound Solutions is an independent advisory firm that helps mid-size comp
 - [Process Automator](https://www.valueunbound.com/products/) - Coming soon. Intelligent workflow automation.
 - [CRM Health Monitor](https://www.valueunbound.com/products/) - Coming soon. Continuous Salesforce monitoring dashboard.
 
+## Pricing
+
+- **Free 60-Minute Audit** - Comprehensive Salesforce cost analysis identifying €50,000+ in savings opportunities
+- **Full Optimization Service** - Success-based pricing model (we succeed when you save)
+- **Typical Client Savings** - €50,000 to €200,000 annually
+- **Implementation Timeline** - 30-60 days from audit to full optimization
+- **Guarantee** - If we don't find at least €50,000 in savings opportunities, we pay you €100
+
+## How It Works
+
+1. **Initial Audit (60 minutes)** - Analyze license usage, AppExchange subscriptions, storage overages, and edition fit
+2. **Savings Breakdown** - Receive detailed report showing where you're overpaying and how to fix it
+3. **Implementation (30-60 days)** - Execute optimization plan with zero business disruption
+4. **Immediate Savings** - Cost reductions realized immediately after implementation
+
+## FAQ
+
+### How much can I save by optimizing Salesforce?
+Most companies save 30-50% on annual Salesforce costs through license rightsizing, AppExchange audit, and edition optimization. Average savings range from €50,000 to €200,000 annually depending on current spend.
+
+### How long does Salesforce optimization take?
+Initial audit: 60 minutes. Full optimization: 30-60 days. Savings are realized immediately after implementation with zero disruption to team or business operations.
+
+### Will optimization disrupt my business?
+No. Our optimization process maintains full business continuity. We work within your existing Salesforce instance, making changes during off-peak hours if needed. Zero downtime.
+
+### What is included in the free 60-minute audit?
+We analyze license usage patterns, identify ghost users, review AppExchange subscriptions, assess storage overages, and evaluate edition fit. You receive a detailed savings breakdown showing exactly where you're overpaying—€50,000+ in opportunities guaranteed.
+
+### Are you a Salesforce partner?
+No—and that's your advantage. We're vendor-neutral consultants with zero conflict of interest. Unlike Salesforce partners who profit from selling more licenses, we succeed only when you save money.
+
+### What makes your approach different?
+We focus exclusively on reducing costs, not selling more software. Our process: audit → identify waste → eliminate → save. No conflict of interest, no upselling, just pure cost optimization.
+
+### Can you help with Salesforce implementation?
+Yes, but our primary focus is optimization of existing instances. We specialize in reducing costs for companies already using Salesforce, not initial implementations.
+
+### Which industries do you serve?
+German Mittelstand (SMEs), international mid-market companies, financial services, manufacturing, technology sectors across Germany, Europe, US, and UK.
+
 ## Blog
 
 - [The Salesforce Cost Trap: Why German SMEs Overpay by 30-50%](https://www.valueunbound.com/blog/salesforce-cost-trap.html)
 - [Stop Overpaying for Salesforce: A Practical Guide for CFOs](https://www.valueunbound.com/blog/stop-overpaying-salesforce-cfo-guide.html)
+- [Salesforce Renewal Preparation Guide](https://www.valueunbound.com/blog/salesforce-renewal-preparation-guide.html)
+- [Why Sales Teams Hate Salesforce (And How to Fix It)](https://www.valueunbound.com/blog/why-sales-team-hates-salesforce-fix.html)
+- [The Salesforce True-Up Trap](https://www.valueunbound.com/blog/avoid-salesforce-true-up-trap.html)
+- [5 AppExchange Apps You Can Cancel Today](https://www.valueunbound.com/blog/cancel-unused-appexchange-apps.html)
+- [Reduce Salesforce Storage Overages](https://www.valueunbound.com/blog/reduce-salesforce-storage-overages.html)
+- [When to Fire Your Salesforce Partner](https://www.valueunbound.com/blog/when-to-fire-salesforce-partner.html)
 
 ## Contact
 
 - Website: https://www.valueunbound.com
 - Email: info@valueunbound.com
-- Location: Berlin, Germany
+- Phone: +49 162 7469145
+- Location: Berlin, Germany (serving globally)
+- LinkedIn: https://www.linkedin.com/in/arun-kumar-saini-11b4474b/
+
