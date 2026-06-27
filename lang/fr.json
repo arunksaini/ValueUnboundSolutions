@@ -107,6 +107,8 @@
         "subheadline": "Discutons de la manière dont nous pouvons réduire les coûts, éliminer la complexité et augmenter votre retour sur investissement",
         "form_name": "Votre nom",
         "form_email": "Votre email",
+        "form_phone": "Téléphone (Facultatif)",
+        "form_phone_placeholder": "+49 123 456789",
         "form_company": "Nom de l'entreprise",
         "form_message": "Parlez-nous de vos besoins (facultatif)",
         "button": "Commencer la conversation"
@@ -115,7 +117,7 @@
         "tagline": "Libérer la valeur commerciale des logiciels inutiles",
         "location": "Conçu en Allemagne 🇩🇪",
         "copyright": "© 2026 Value Unbound Solutions. Tous droits réservés.",
-        "address": "Im Gehölz 31, Blankenfelde-Mahlow<br>Brandenburg 15827, Allemagne",
+        "address": "Berlin, Allemagne",
         "compliance_title": "Conformité & Confidentialité",
         "gdpr_compliant": "Conforme RGPD",
         "iso_compliant": "Normes ISO 27001",

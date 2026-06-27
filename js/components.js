@@ -155,9 +155,7 @@
                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
-                                <span data-i18n="footer.address" style="white-space: pre-line;">Im Geh\u00f6lz 31,
-                                    Blankenfelde-Mahlow
-                                    Brandenburg 15827, Germany</span>
+                                <span data-i18n="footer.address" style="white-space: pre-line;">Berlin, Germany</span>
                             </div>
                         </div>
 
@@ -273,8 +271,7 @@
 
                 <p style="margin-bottom: var(--space-4);">
                     Value Unbound Solutions - Arun Kumar Saini<br>
-                    Im Geh\u00f6lz 31, Blankenfelde-Mahlow<br>
-                    15827 Brandenburg
+                    Berlin, Germany
                 </p>
 
                 <p style="font-weight: var(--font-weight-semibold); margin-top: var(--space-6); margin-bottom: var(--space-2);"
@@ -282,7 +279,6 @@
                     Kontakt:
                 </p>
                 <p style="margin-bottom: var(--space-4);">
-                    <span data-i18n="imprint.phone_label">Telefon:</span> +49 162 7469145<br>
                     <span data-i18n="imprint.email_label">E-Mail:</span> <a href="mailto:info@valueunbound.com"
                         style="color: var(--color-primary);">info@valueunbound.com</a><br>
                     <span data-i18n="imprint.website_label">Website:</span> <a href="https://www.valueunbound.com"
@@ -305,8 +301,7 @@
                 </p>
                 <p style="margin-bottom: var(--space-4);">
                     Arun Kumar Saini<br>
-                    Im Geh\u00f6lz 31, Blankenfelde-Mahlow<br>
-                    15827 Brandenburg
+                    Berlin, Germany
                 </p>
 
                 <p style="font-weight: var(--font-weight-semibold); margin-top: var(--space-6); margin-bottom: var(--space-2);"

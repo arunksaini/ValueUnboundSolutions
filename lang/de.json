@@ -107,6 +107,8 @@
         "subheadline": "Lassen Sie uns besprechen, wie wir Kosten senken, Komplexität beseitigen und Ihren ROI steigern können",
         "form_name": "Ihr Name",
         "form_email": "Ihre E-Mail",
+        "form_phone": "Telefon (Optional)",
+        "form_phone_placeholder": "+49 123 456789",
         "form_company": "Firmenname",
         "form_message": "Erzählen Sie uns von Ihren Bedürfnissen (optional)",
         "button": "Gespräch beginnen"
@@ -115,7 +117,7 @@
         "tagline": "Befreiung des Geschäftswerts von unnötiger Software",
         "location": "Entwickelt in Deutschland 🇩🇪",
         "copyright": "© 2026 Value Unbound Solutions. Alle Rechte vorbehalten.",
-        "address": "Im Gehölz 31, Blankenfelde-Mahlow<br>Brandenburg 15827, Deutschland",
+        "address": "Berlin, Deutschland",
         "compliance_title": "Compliance & Datenschutz",
         "gdpr_compliant": "DSGVO-konform",
         "iso_compliant": "ISO 27001 Standards",

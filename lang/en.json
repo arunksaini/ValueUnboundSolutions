@@ -107,6 +107,8 @@
         "subheadline": "Schedule your complimentary 30-minute Salesforce assessment. We'll identify 3-5 immediate cost optimization opportunities and provide a roadmap for implementation.",
         "form_name": "Your Full Name",
         "form_email": "Business Email",
+        "form_phone": "Phone (Optional)",
+        "form_phone_placeholder": "+49 123 456789",
         "form_company": "Company Name",
         "form_message": "What's your biggest Salesforce challenge? (Optional)",
         "button": "Schedule Free Assessment"
@@ -115,7 +117,7 @@
         "tagline": "Freeing business value from unnecessary software",
         "location": "Engineered in Germany 🇩🇪",
         "copyright": "© 2026 Value Unbound Solutions. All rights reserved.",
-        "address": "Im Gehölz 31, Blankenfelde-Mahlow\nBrandenburg 15827, Germany",
+        "address": "Berlin, Germany",
         "compliance_title": "Compliance & Privacy",
         "gdpr_compliant": "GDPR Compliant",
         "iso_compliant": "ISO 27001 Standards",
